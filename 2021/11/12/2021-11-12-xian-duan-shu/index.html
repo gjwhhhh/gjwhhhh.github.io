@@ -41,7 +41,7 @@ void push_up(int u)">
 <meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="葛济维的博客" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -479,14 +479,14 @@ void push_up(int u)">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    88
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
 
@@ -501,9 +501,6 @@ void push_up(int u)">
         <hr class="clearfix">
 
         
-        <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="/libs/prism/prism.css">
-        
 
         
 
@@ -511,84 +508,84 @@ void push_up(int u)">
             <div id="articleContent">
                 <p>线段树模板</p>
 <p>数据存储：</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int w[N];//记录一下权重
+<pre class=" language-c++"><code class="language-c++">int w[N];//记录一下权重
 struct node{
     int l,r;//左右区间
     int sum;//总和
-}tr[N*4];//记得开 4 倍空间<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+}tr[N*4];//记得开 4 倍空间
+</code></pre>
 <p>void push_up(int u) 用子节点信息更新当前节点信息</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void push_up(int u)//利用它的两个儿子来算一下它的当前节点信息
+<pre class=" language-c++"><code class="language-c++">void push_up(int u)//利用它的两个儿子来算一下它的当前节点信息
 {
-    tr[u].sum=tr[u&lt;&lt;1].sum+tr[u&lt;&lt;1|1].sum;//左儿子 u&lt;&lt;1 ,右儿子 u&lt;&lt;1|1  
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
+    tr[u].sum=tr[u<<1].sum+tr[u<<1|1].sum;//左儿子 u<<1 ,右儿子 u<<1|1  
+}
+</code></pre>
 <p>void build(int u,int l,int r) 根结点为u，在一段区间[l,r]上初始化线段树</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void build(int u,int l,int r)/*第一个参数，当前节点编号，第二个参数，左边界，第三个参数，右边界*/
+<pre class=" language-c++"><code class="language-c++">void build(int u,int l,int r)/*第一个参数，当前节点编号，第二个参数，左边界，第三个参数，右边界*/
 {
     if(l==r)tr[u]={l,r,w[r]};//如果当前已经是叶节点了，那我们就直接赋值就可以了
     else//否则的话，说明当前区间长度至少是 2 对吧，那么我们需要把当前区间分为左右两个区间，那先要找边界点
     {
         tr[u]={l,r};//这里记得赋值一下左右边界的初值
 
-        int mid=l+r&gt;&gt;1;//边界的话直接去计算一下 l + r 的下取整
+        int mid=l+r>>1;//边界的话直接去计算一下 l + r 的下取整
 
-        build(u&lt;&lt;1,l,mid);//先递归一下左儿子
+        build(u<<1,l,mid);//先递归一下左儿子
 
-        build(u&lt;&lt;1|1,mid+1,r);//然后递归一下右儿子
+        build(u<<1|1,mid+1,r);//然后递归一下右儿子
 
         push_up(u);//做完两个儿子之后的话呢 push_up 一遍u 啊，更新一下当前节点信息
     }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+}
+</code></pre>
 <p>int query(int u,int l,int r) 查询从根节点u开始往下找对应的[l,r]区间的和</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">
+<pre class=" language-c++"><code class="language-c++">
 int query(int u,int l,int r)//查询的过程是从根结点开始往下找对应的一个区间
 {
-    if(l&lt;=tr[u].l&amp;&amp;tr[u].r&lt;=r)return tr[u].sum;//如果当前区间已经完全被包含了，那么我们直接返回它的值就可以了
+    if(l<=tr[u].l&&tr[u].r<=r)return tr[u].sum;//如果当前区间已经完全被包含了，那么我们直接返回它的值就可以了
     //否则的话我们需要去递归来算
-    int mid=tr[u].l+tr[u].r&gt;&gt;1;//计算一下我们 当前 区间的中点是多少
+    int mid=tr[u].l+tr[u].r>>1;//计算一下我们 当前 区间的中点是多少
     //先判断一下和左边有没有交集
 
     int sum=0;//用 sum 来表示一下我们的总和
 
-    if(mid&gt;=l)sum+=query(u&lt;&lt;1,l,r);//看一下我们当前区间的中点和左边有没有交集
-    if(r&gt;=mid+1)//看一下我们当前区间的中点和右边有没有交集
-    sum+=query(u&lt;&lt;1|1,l,r);
+    if(mid>=l)sum+=query(u<<1,l,r);//看一下我们当前区间的中点和左边有没有交集
+    if(r>=mid+1)//看一下我们当前区间的中点和右边有没有交集
+    sum+=query(u<<1|1,l,r);
 
     return sum;
 
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+}
+</code></pre>
 <p>void modify(int u,int x,int v) 根节点为u，修改位置为x，修改值 += v</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void modify(int u,int x,int v)//第一个参数也就是当前节点的编号,第二个参数是要修改的位置，第三个参数是要修改的值
+<pre class=" language-c++"><code class="language-c++">void modify(int u,int x,int v)//第一个参数也就是当前节点的编号,第二个参数是要修改的位置，第三个参数是要修改的值
 {
     if(tr[u].l==tr[u].r)tr[u].sum+=v; //如果当前已经是叶节点了，那我们就直接让他的总和加上 v 就可以了
     //否则
     else
     {
-      int mid=tr[u].l+tr[u].r&gt;&gt;1;
+      int mid=tr[u].l+tr[u].r>>1;
       //看一下 x 是在左半边还是在右半边
-      if(x&lt;=mid)modify(u&lt;&lt;1,x,v);//如果是在左半边，那就找左儿子
-      else modify(u&lt;&lt;1|1,x,v);//如果在右半边，那就找右儿子
+      if(x<=mid)modify(u<<1,x,v);//如果是在左半边，那就找左儿子
+      else modify(u<<1|1,x,v);//如果在右半边，那就找右儿子
       //更新完之后当前节点的信息就要发生变化对吧，那么我们就需要 pushup 一遍
       push_up(u);
     }
 
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+}
+</code></pre>
 <p>主函数区间查询和点单修改操作</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int main()
+<pre class=" language-c++"><code class="language-c++">int main()
 {
-    scanf("%d%d",&amp;n,&amp;m);
-    for(int i=1;i&lt;=n;i++)scanf("%d",&amp;w[i]);
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;i++)scanf("%d",&w[i]);
 
     build(1,1,n);/*第一个参数是根节点的下标，根节点是一号点，然后初始区间是 1 到 n */
     //后面的话就是一些修改操作了
     while(m--)
     {
         int k,a,b;
-        scanf("%d%d%d",&amp;k,&amp;a,&amp;b);
+        scanf("%d%d%d",&k,&a,&b);
 
         if(!k)printf("%d\n",query(1,a,b));//求和的时候，也是传三个参数，第一个的话是根节点的编号 ，第二个的话是我们查询的区间 
         //第一个参数也就是当前节点的编号
@@ -597,8 +594,8 @@ int query(int u,int l,int r)//查询的过程是从根结点开始往下找对�
 
     }
     return 0;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+}
+</code></pre>
 <p>线段树例题：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1266/">https://www.acwing.com/problem/content/1266/</a></p>
 <p><img src="/../images/2021-11-12-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/image-20211112203856738.png" alt="image-20211112203856738"></p>
 <p><img src="/../images/2021-11-12-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/image-20211112203859684.png" alt="image-20211112203859684"></p>
@@ -1148,7 +1145,7 @@ int query(int u,int l,int r)//查询的过程是从根结点开始往下找对�
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">1.8k</span>
+                        class="white-color">974</span>
             
             
             
@@ -1329,7 +1326,7 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
-    <script src="/js/click_show_text.js"></script>
+    <!-- 鼠标点击文字效果<script src="/js/click_show_text.js"></script> -->
 	
     
 

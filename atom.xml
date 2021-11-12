@@ -30,8 +30,10 @@
         
     <summary type="html">&lt;p&gt;线段树模板&lt;/p&gt;
 &lt;p&gt;数据存储：&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-c++&quot; data-language=&quot;c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt;int w[N];//记录一下权重
-struct</summary>
+&lt;pre class=&quot; language-c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt;int w[N];//记录一下权重
+struct node{
+    int l,r;//左右区间
+    int</summary>
         
       
     
@@ -76,7 +78,7 @@ struct</summary>
     <link href="http://gjwhhhh.github.io/2021/11/12/shu-zhuang-shu-zu-mo-ban/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/shu-zhuang-shu-zu-mo-ban/</id>
     <published>2021-11-12T04:09:00.000Z</published>
-    <updated>2021-11-12T09:13:39.929Z</updated>
+    <updated>2021-11-12T14:30:51.329Z</updated>
     
     
       
@@ -101,7 +103,7 @@ struct</summary>
     <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian-ji-mei-hua/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian-ji-mei-hua/</id>
     <published>2021-11-12T03:34:00.000Z</published>
-    <updated>2021-11-12T14:17:10.281Z</updated>
+    <updated>2021-11-12T15:04:18.397Z</updated>
     
     
       
