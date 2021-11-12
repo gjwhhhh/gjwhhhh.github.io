@@ -4,13 +4,88 @@
   
     
     <entry>
+      <title>测试</title>
+      <link href="/2021/11/12/ce-shi/"/>
+      <url>/2021/11/12/ce-shi/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/.com//123.png" alt="123"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>树状数组</title>
+      <link href="/2021/11/12/shu-zhuang-shu-zu-mo-ban/"/>
+      <url>/2021/11/12/shu-zhuang-shu-zu-mo-ban/</url>
+      
+        <content type="html"><![CDATA[<h2 id="树状数组原理"><a href="#树状数组原理" class="headerlink" title="树状数组原理"></a>树状数组原理</h2><p><img src="/.com//7416_68861e9035-31e23bc7b41ec145edb45cee8b55855-1636690330918.png" alt="31e23bc7b41ec145edb45cee8b55855.png"></p><p>1、lowbit(x):返回x的最后一位1</p><p>2、add(x,v):在x位置加上v，并将后面相关联的位置也加上v</p><p>3、query(x):询问x的前缀和</p><p>时间复杂度 $O(logn)$</p><h2 id="树状数组模板"><a href="#树状数组模板" class="headerlink" title="树状数组模板"></a>树状数组模板</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">const int N = 100005;int a[N],tree[N];int n,m;int lowbit(int x){    return x &amp; (-x);}void update(int pos,int v){for(int i=pos; i&lt;=n; i+=lowbit(i)){    tree[i] += v;}}int query(int n){    int ans = 0;    for(int pos=n; pos&gt;0; pos-=lowbit(pos)) ans += tree[pos];    return ans;}int query(int a,int b){    return query(b) - query(a-1);}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>例题：<a href="https://www.acwing.com/problem/content/1266/">1264. 动态求连续区间和</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 树状数组 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客搭建</title>
+      <link href="/2021/11/12/2021-11-12-bo-ke-da-jian/"/>
+      <url>/2021/11/12/2021-11-12-bo-ke-da-jian/</url>
+      
+        <content type="html"><![CDATA[<p>博客主要采用github + hexo + hexo-theme-matery进行搭建</p><p>此博客使用github pages进行托管，利用hexo搭建博客框架，使用hexo-theme-matery作为博客的主题。</p><p>hexo搭建博客可以下载多种主题，使用配置的方式让代码小白也能拥有自己的一个博客</p><p>hexo-theme-matery页面美观，成体系的架构博客，使得用户专注于博客内容得编写而省去开发得繁琐</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
-      <link href="/2021/11/10/hello-world/"/>
-      <url>/2021/11/10/hello-world/</url>
+      <link href="/2021/11/10/hello/"/>
+      <url>/2021/11/10/hello/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
       
     </entry>
     

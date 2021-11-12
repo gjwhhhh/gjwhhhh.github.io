@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>1985-10-26T08:15:00.000Z</updated>
+  <updated>2021-11-12T04:31:20.588Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,83 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>测试</title>
+    <link href="http://example.com/2021/11/12/ce-shi/"/>
+    <id>http://example.com/2021/11/12/ce-shi/</id>
+    <published>2021-11-12T04:22:14.000Z</published>
+    <updated>2021-11-12T04:31:20.588Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/.com//123.png&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>树状数组</title>
+    <link href="http://example.com/2021/11/12/shu-zhuang-shu-zu-mo-ban/"/>
+    <id>http://example.com/2021/11/12/shu-zhuang-shu-zu-mo-ban/</id>
+    <published>2021-11-12T04:09:00.000Z</published>
+    <updated>2021-11-12T04:18:37.814Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;树状数组原理&quot;&gt;&lt;a href=&quot;#树状数组原理&quot; class=&quot;headerlink&quot; title=&quot;树状数组原理&quot;&gt;&lt;/a&gt;树状数组原理&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="树状数组" scheme="http://example.com/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客搭建</title>
+    <link href="http://example.com/2021/11/12/2021-11-12-bo-ke-da-jian/"/>
+    <id>http://example.com/2021/11/12/2021-11-12-bo-ke-da-jian/</id>
+    <published>2021-11-12T03:34:00.000Z</published>
+    <updated>2021-11-12T03:38:23.242Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;博客主要采用github + hexo + hexo-theme-matery进行搭建&lt;/p&gt;
+&lt;p&gt;此博客使用github</summary>
+        
+      
+    
+    
+    
+    <category term="随笔" scheme="http://example.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="笔记" scheme="http://example.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2021/11/10/hello-world/"/>
-    <id>http://example.com/2021/11/10/hello-world/</id>
-    <published>2021-11-10T14:26:06.076Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
+    <link href="http://example.com/2021/11/10/hello/"/>
+    <id>http://example.com/2021/11/10/hello/</id>
+    <published>2021-11-10T12:28:00.000Z</published>
+    <updated>2021-11-12T03:33:22.641Z</updated>
     
     
       
@@ -34,6 +106,10 @@
     
     
     
+    <category term="随笔" scheme="http://example.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="笔记" scheme="http://example.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
