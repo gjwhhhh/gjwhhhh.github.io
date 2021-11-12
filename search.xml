@@ -8,7 +8,7 @@
       <link href="/2021/11/12/ce-shi/"/>
       <url>/2021/11/12/ce-shi/</url>
       
-        <content type="html"><![CDATA[<p><img src="/.com//123.png" alt="123"></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="//gjwhhhh.github/123.png" alt="123"></p>]]></content>
       
       
       
@@ -21,7 +21,7 @@
       <link href="/2021/11/12/shu-zhuang-shu-zu-mo-ban/"/>
       <url>/2021/11/12/shu-zhuang-shu-zu-mo-ban/</url>
       
-        <content type="html"><![CDATA[<h2 id="树状数组原理"><a href="#树状数组原理" class="headerlink" title="树状数组原理"></a>树状数组原理</h2><p><img src="/.com//7416_68861e9035-31e23bc7b41ec145edb45cee8b55855-1636690330918.png" alt="31e23bc7b41ec145edb45cee8b55855.png"></p><p>1、lowbit(x):返回x的最后一位1</p><p>2、add(x,v):在x位置加上v，并将后面相关联的位置也加上v</p><p>3、query(x):询问x的前缀和</p><p>时间复杂度 $O(logn)$</p><h2 id="树状数组模板"><a href="#树状数组模板" class="headerlink" title="树状数组模板"></a>树状数组模板</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">const int N = 100005;int a[N],tree[N];int n,m;int lowbit(int x){    return x &amp; (-x);}void update(int pos,int v){for(int i=pos; i&lt;=n; i+=lowbit(i)){    tree[i] += v;}}int query(int n){    int ans = 0;    for(int pos=n; pos&gt;0; pos-=lowbit(pos)) ans += tree[pos];    return ans;}int query(int a,int b){    return query(b) - query(a-1);}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>例题：<a href="https://www.acwing.com/problem/content/1266/">1264. 动态求连续区间和</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="树状数组原理"><a href="#树状数组原理" class="headerlink" title="树状数组原理"></a>树状数组原理</h2><p><img src="//gjwhhhh.github/7416_68861e9035-31e23bc7b41ec145edb45cee8b55855-1636690330918.png" alt="31e23bc7b41ec145edb45cee8b55855.png"></p><p>1、lowbit(x):返回x的最后一位1</p><p>2、add(x,v):在x位置加上v，并将后面相关联的位置也加上v</p><p>3、query(x):询问x的前缀和</p><p>时间复杂度 $O(logn)$</p><h2 id="树状数组模板"><a href="#树状数组模板" class="headerlink" title="树状数组模板"></a>树状数组模板</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">const int N = 100005;int a[N],tree[N];int n,m;int lowbit(int x){    return x &amp; (-x);}void update(int pos,int v){for(int i=pos; i&lt;=n; i+=lowbit(i)){    tree[i] += v;}}int query(int n){    int ans = 0;    for(int pos=n; pos&gt;0; pos-=lowbit(pos)) ans += tree[pos];    return ans;}int query(int a,int b){    return query(b) - query(a-1);}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>例题：<a href="https://www.acwing.com/problem/content/1266/">1264. 动态求连续区间和</a></p>]]></content>
       
       
       <categories>

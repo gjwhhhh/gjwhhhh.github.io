@@ -3,11 +3,11 @@
   <title>葛济维的博客</title>
   
   <subtitle>JiWei Ge</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://gjwhhhh.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://gjwhhhh.github.io/"/>
   <updated>2021-11-12T04:31:20.588Z</updated>
-  <id>http://example.com/</id>
+  <id>http://gjwhhhh.github.io/</id>
   
   <author>
     <name>葛济维</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>测试</title>
-    <link href="http://example.com/2021/11/12/ce-shi/"/>
-    <id>http://example.com/2021/11/12/ce-shi/</id>
+    <link href="http://gjwhhhh.github.io/2021/11/12/ce-shi/"/>
+    <id>http://gjwhhhh.github.io/2021/11/12/ce-shi/</id>
     <published>2021-11-12T04:22:14.000Z</published>
     <updated>2021-11-12T04:31:20.588Z</updated>
     
@@ -28,7 +28,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/.com//123.png&quot;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;//gjwhhhh.github/123.png&quot;</summary>
         
       
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>树状数组</title>
-    <link href="http://example.com/2021/11/12/shu-zhuang-shu-zu-mo-ban/"/>
-    <id>http://example.com/2021/11/12/shu-zhuang-shu-zu-mo-ban/</id>
+    <link href="http://gjwhhhh.github.io/2021/11/12/shu-zhuang-shu-zu-mo-ban/"/>
+    <id>http://gjwhhhh.github.io/2021/11/12/shu-zhuang-shu-zu-mo-ban/</id>
     <published>2021-11-12T04:09:00.000Z</published>
     <updated>2021-11-12T04:18:37.814Z</updated>
     
@@ -55,17 +55,17 @@
     
     
     
-    <category term="算法" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="树状数组" scheme="http://example.com/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    <category term="树状数组" scheme="http://gjwhhhh.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
   <entry>
     <title>博客搭建</title>
-    <link href="http://example.com/2021/11/12/2021-11-12-bo-ke-da-jian/"/>
-    <id>http://example.com/2021/11/12/2021-11-12-bo-ke-da-jian/</id>
+    <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian/"/>
+    <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian/</id>
     <published>2021-11-12T03:34:00.000Z</published>
     <updated>2021-11-12T03:38:23.242Z</updated>
     
@@ -81,17 +81,17 @@
     
     
     
-    <category term="随笔" scheme="http://example.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="http://gjwhhhh.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-    <category term="笔记" scheme="http://example.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="http://gjwhhhh.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2021/11/10/hello/"/>
-    <id>http://example.com/2021/11/10/hello/</id>
+    <link href="http://gjwhhhh.github.io/2021/11/10/hello/"/>
+    <id>http://gjwhhhh.github.io/2021/11/10/hello/</id>
     <published>2021-11-10T12:28:00.000Z</published>
     <updated>2021-11-12T03:33:22.641Z</updated>
     
@@ -106,10 +106,10 @@
     
     
     
-    <category term="随笔" scheme="http://example.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="http://gjwhhhh.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-    <category term="笔记" scheme="http://example.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="http://gjwhhhh.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
