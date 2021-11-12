@@ -7,7 +7,9 @@
     <meta name="keywords" content="测试, 葛济维的博客">
     <meta name="description" content="hexo中完美插入本地图片两种方法解决解决hexo插入本地图片
 先hexo new “文章名”，把图片放入_posts/文章名 文件夹中
-1.第一种，使用官方引用图片方式
+
+第一种，使用官方引用图片方式
+
 {% asset_img example.jpg [title] %">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -470,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    222
+                    340
                 </div>
                 
 
@@ -502,10 +504,14 @@
             <div id="articleContent">
                 <h2 id="hexo中完美插入本地图片"><a href="#hexo中完美插入本地图片" class="headerlink" title="hexo中完美插入本地图片"></a>hexo中完美插入本地图片</h2><p>两种方法解决解决hexo插入本地图片</p>
 <p>先hexo new “文章名”，把图片放入<code>_posts/文章名</code> 文件夹中</p>
-<p>1.第一种，使用官方引用图片方式</p>
+<ol>
+<li>第一种，使用官方引用图片方式</li>
+</ol>
 <pre class="line-numbers language-none"><code class="language-none">{% asset_img example.jpg [title] %}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>2.第二种使用插件</p>
+<ol start="2">
+<li>第二种使用插件</li>
+</ol>
 <p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked </a> 解决hexo插入本地图片</p>
 <p>_config.yml文件</p>
 <pre class="line-numbers language-none"><code class="language-none">post_asset_folder: true
@@ -516,18 +522,32 @@ marked:
 <p>使用语法：</p>
 <pre class="line-numbers language-none"><code class="language-none">![](image.jpg)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<p>这样可以引入，但是无法在markdown编辑器中显示图片</p>
+<p>采用这种下面这种引入方式可解决：</p>
+<ul>
+<li><p>在“Blog-&gt;source”下新建”images”文件夹。注意”images”与”_posts”同级。</p>
+</li>
+<li><p>在Typora中“文件-&gt;设置偏好-&gt;图像“。在插入图片时”复制到指定路径“设置为</p>
+</li>
+</ul>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">../../source/images//${filename}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>每次将图片插入到images下的文章名的文件夹下</p>
 <p>引入图片，问题可完美解决</p>
-<p>3.使用图床引入外链</p>
+<ol start="3">
+<li>使用图床引入外链</li>
+</ol>
 <p>图床网站 <a target="_blank" rel="noopener" href="https://sm.ms/">https://sm.ms/</a></p>
 <p>感觉这个最简单    </p>
 <h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul>
-<li><p>两种方法引入图片在markdown编辑器中均不可见</p>
+<li><p>两种方法只有第二种引入图片在markdown编辑器中可见</p>
 </li>
 <li><p>参考互联网上文章使用hexo-asset-image插件，高版本hexo并不适配</p>
 </li>
 </ul>
-<h3 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h3><p><a target="_blank" rel="noopener" href="http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/">http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</a></p>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders.html">https://hexo.io/zh-cn/docs/asset-folders.html</a></p>
+<h3 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h3><p>知乎：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/419663130">https://www.zhihu.com/question/419663130</a></p>
+<p>博客：<a target="_blank" rel="noopener" href="http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/">http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</a></p>
+<p>官方文档<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders.html">https://hexo.io/zh-cn/docs/asset-folders.html</a></p>
 
                 
             </div>
@@ -824,9 +844,9 @@ marked:
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="测试">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="图片引用测试">
                         
-                        <span class="card-title">测试</span>
+                        <span class="card-title">图片引用测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1059,7 +1079,7 @@ marked:
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">563</span>
+                        class="white-color">681</span>
             
             
             
