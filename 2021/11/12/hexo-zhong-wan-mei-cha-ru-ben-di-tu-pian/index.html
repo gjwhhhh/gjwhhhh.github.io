@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="资源, 葛济维的博客">
-    <meta name="description" content="资源 | 葛济维的博客">
+    <meta name="keywords" content="测试, 葛济维的博客">
+    <meta name="description" content="hexo中完美插入本地图片两种方法解决解决hexo插入本地图片
+先hexo new “文章名”，把图片放入_posts/文章名 文件夹中
+1.第一种，使用官方引用图片方式
+{% asset_img example.jpg [title] %">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>资源 | 葛济维的博客</title>
+    <title>测试 | 葛济维的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -312,12 +315,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">资源</h1>
+                    <h1 class="description center-align post-title">测试</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +434,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/hexo-renderer-marked/">
+                                <span class="chip bg-color">hexo-renderer-marked</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                博客搭建
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -445,7 +461,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-10
+                    2021-11-12
                 </div>
                 
 
@@ -454,7 +470,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    222
                 </div>
                 
 
@@ -484,7 +500,35 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="hexo中完美插入本地图片"><a href="#hexo中完美插入本地图片" class="headerlink" title="hexo中完美插入本地图片"></a>hexo中完美插入本地图片</h2><p>两种方法解决解决hexo插入本地图片</p>
+<p>先hexo new “文章名”，把图片放入<code>_posts/文章名</code> 文件夹中</p>
+<p>1.第一种，使用官方引用图片方式</p>
+<pre class="line-numbers language-none"><code class="language-none">{% asset_img example.jpg [title] %}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>2.第二种使用插件</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked </a> 解决hexo插入本地图片</p>
+<p>_config.yml文件</p>
+<pre class="line-numbers language-none"><code class="language-none">post_asset_folder: true
+marked:  
+  prependRoot: true  
+  postAsset: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>使用语法：</p>
+<pre class="line-numbers language-none"><code class="language-none">![](image.jpg)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>引入图片，问题可完美解决</p>
+<p>3.使用图床引入外链</p>
+<p>图床网站 <a target="_blank" rel="noopener" href="https://sm.ms/">https://sm.ms/</a></p>
+<p>感觉这个最简单    </p>
+<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul>
+<li><p>两种方法引入图片在markdown编辑器中均不可见</p>
+</li>
+<li><p>参考互联网上文章使用hexo-asset-image插件，高版本hexo并不适配</p>
+</li>
+</ul>
+<h3 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h3><p><a target="_blank" rel="noopener" href="http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/">http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders.html">https://hexo.io/zh-cn/docs/asset-folders.html</a></p>
+
                 
             </div>
             <hr/>
@@ -510,7 +554,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://gjwhhhh.github.io/resources/index.html">http://gjwhhhh.github.io/resources/index.html</a>
+                    <a href="http://gjwhhhh.github.io/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/">http://gjwhhhh.github.io/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -547,7 +591,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/hexo-renderer-marked/">
+                                    <span class="chip bg-color">hexo-renderer-marked</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -722,13 +770,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/resources/index.html">
+                <a href="/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="资源">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="测试">
                         
-                        <span class="card-title">资源</span>
+                        <span class="card-title">测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -739,17 +787,29 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            葛济维
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                    博客搭建
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo-renderer-marked/">
+                        <span class="chip bg-color">hexo-renderer-marked</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -757,16 +817,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/resources/index.html">
+                <a href="/2021/11/12/ce-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="资源">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="测试">
                         
-                        <span class="card-title">资源</span>
+                        <span class="card-title">测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -777,17 +837,28 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            葛济维
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%B5%8B%E8%AF%95/" class="post-category">
+                                    测试
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">测试</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

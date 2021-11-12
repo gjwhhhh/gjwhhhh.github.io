@@ -6,7 +6,7 @@
   <link href="http://gjwhhhh.github.io/atom.xml" rel="self"/>
   
   <link href="http://gjwhhhh.github.io/"/>
-  <updated>2021-11-12T05:09:57.833Z</updated>
+  <updated>2021-11-12T06:16:44.929Z</updated>
   <id>http://gjwhhhh.github.io/</id>
   
   <author>
@@ -18,23 +18,52 @@
   
   <entry>
     <title>测试</title>
+    <link href="http://gjwhhhh.github.io/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/"/>
+    <id>http://gjwhhhh.github.io/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/</id>
+    <published>2021-11-12T06:11:00.000Z</published>
+    <updated>2021-11-12T06:16:44.929Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;hexo中完美插入本地图片&quot;&gt;&lt;a href=&quot;#hexo中完美插入本地图片&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客搭建" scheme="http://gjwhhhh.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="hexo-renderer-marked" scheme="http://gjwhhhh.github.io/tags/hexo-renderer-marked/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
     <link href="http://gjwhhhh.github.io/2021/11/12/ce-shi/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/ce-shi/</id>
     <published>2021-11-12T04:22:14.000Z</published>
-    <updated>2021-11-12T05:09:57.833Z</updated>
+    <updated>2021-11-12T06:11:53.516Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;//gjwhhhh.github/123.png&quot; alt=&quot;123&quot;&gt;&lt;/p&gt;
-&lt;img src=&quot;//gjwhhhh.github/11/12/ce-shi/123.png&quot; class width=&quot;123&quot;&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/11/12/ce-shi/123.png&quot;&gt;&lt;/p&gt;
+&lt;img src=&quot;/2021/11/12/ce-shi/123.png&quot; class=&quot;&quot;</summary>
         
       
     
     
     
+    <category term="测试" scheme="http://gjwhhhh.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="测试" scheme="http://gjwhhhh.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   

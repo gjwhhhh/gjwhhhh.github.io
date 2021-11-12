@@ -5,12 +5,49 @@
     
     <entry>
       <title>测试</title>
+      <link href="/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/"/>
+      <url>/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/</url>
+      
+        <content type="html"><![CDATA[<h2 id="hexo中完美插入本地图片"><a href="#hexo中完美插入本地图片" class="headerlink" title="hexo中完美插入本地图片"></a>hexo中完美插入本地图片</h2><p>两种方法解决解决hexo插入本地图片</p><p>先hexo new “文章名”，把图片放入<code>_posts/文章名</code> 文件夹中</p><p>1.第一种，使用官方引用图片方式</p><pre class="line-numbers language-none"><code class="language-none">{% asset_img example.jpg [title] %}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>2.第二种使用插件</p><p><a href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked </a> 解决hexo插入本地图片</p><p>_config.yml文件</p><pre class="line-numbers language-none"><code class="language-none">post_asset_folder: truemarked:    prependRoot: true    postAsset: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>使用语法：</p><pre class="line-numbers language-none"><code class="language-none">![](image.jpg)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>引入图片，问题可完美解决</p><p>3.使用图床引入外链</p><p>图床网站 <a href="https://sm.ms/">https://sm.ms/</a></p><p>感觉这个最简单    </p><h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul><li><p>两种方法引入图片在markdown编辑器中均不可见</p></li><li><p>参考互联网上文章使用hexo-asset-image插件，高版本hexo并不适配</p></li></ul><h3 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h3><p><a href="http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/">http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</a></p><p><a href="https://hexo.io/zh-cn/docs/asset-folders.html">https://hexo.io/zh-cn/docs/asset-folders.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo-renderer-marked </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试</title>
       <link href="/2021/11/12/ce-shi/"/>
       <url>/2021/11/12/ce-shi/</url>
       
-        <content type="html"><![CDATA[<p><img src="//gjwhhhh.github/123.png" alt="123"></p><img src="//gjwhhhh.github/11/12/ce-shi/123.png" class width="123"> ]]></content>
+        <content type="html"><![CDATA[<p><img src="/2021/11/12/ce-shi/123.png"></p><img src="/2021/11/12/ce-shi/123.png" class="" title="[title]">]]></content>
       
       
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -21,7 +58,7 @@
       <link href="/2021/11/12/shu-zhuang-shu-zu-mo-ban/"/>
       <url>/2021/11/12/shu-zhuang-shu-zu-mo-ban/</url>
       
-        <content type="html"><![CDATA[<h2 id="树状数组原理"><a href="#树状数组原理" class="headerlink" title="树状数组原理"></a>树状数组原理</h2><p><img src="//gjwhhhh.github/7416_68861e9035-31e23bc7b41ec145edb45cee8b55855-1636690330918.png" alt="31e23bc7b41ec145edb45cee8b55855.png"></p><p>1、lowbit(x):返回x的最后一位1</p><p>2、add(x,v):在x位置加上v，并将后面相关联的位置也加上v</p><p>3、query(x):询问x的前缀和</p><p>时间复杂度 $O(logn)$</p><h2 id="树状数组模板"><a href="#树状数组模板" class="headerlink" title="树状数组模板"></a>树状数组模板</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">const int N = 100005;int a[N],tree[N];int n,m;int lowbit(int x){    return x &amp; (-x);}void update(int pos,int v){for(int i=pos; i&lt;=n; i+=lowbit(i)){    tree[i] += v;}}int query(int n){    int ans = 0;    for(int pos=n; pos&gt;0; pos-=lowbit(pos)) ans += tree[pos];    return ans;}int query(int a,int b){    return query(b) - query(a-1);}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>例题：<a href="https://www.acwing.com/problem/content/1266/">1264. 动态求连续区间和</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="树状数组原理"><a href="#树状数组原理" class="headerlink" title="树状数组原理"></a>树状数组原理</h2><p><img src="/typora_image/7416_68861e9035-31e23bc7b41ec145edb45cee8b55855-1636690330918.png" alt="31e23bc7b41ec145edb45cee8b55855.png"></p><p>1、lowbit(x):返回x的最后一位1</p><p>2、add(x,v):在x位置加上v，并将后面相关联的位置也加上v</p><p>3、query(x):询问x的前缀和</p><p>时间复杂度 $O(logn)$</p><h2 id="树状数组模板"><a href="#树状数组模板" class="headerlink" title="树状数组模板"></a>树状数组模板</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">const int N = 100005;int a[N],tree[N];int n,m;int lowbit(int x){    return x &amp; (-x);}void update(int pos,int v){for(int i=pos; i&lt;=n; i+=lowbit(i)){    tree[i] += v;}}int query(int n){    int ans = 0;    for(int pos=n; pos&gt;0; pos-=lowbit(pos)) ans += tree[pos];    return ans;}int query(int a,int b){    return query(b) - query(a-1);}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>例题：<a href="https://www.acwing.com/problem/content/1266/">1264. 动态求连续区间和</a></p>]]></content>
       
       
       <categories>
