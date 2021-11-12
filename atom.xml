@@ -6,7 +6,7 @@
   <link href="http://gjwhhhh.github.io/atom.xml" rel="self"/>
   
   <link href="http://gjwhhhh.github.io/"/>
-  <updated>2021-11-12T09:00:46.204Z</updated>
+  <updated>2021-11-12T12:39:32.029Z</updated>
   <id>http://gjwhhhh.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试</title>
+    <title>线段树</title>
+    <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/"/>
+    <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/</id>
+    <published>2021-11-12T12:39:00.000Z</published>
+    <updated>2021-11-12T12:39:32.029Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;线段树模板&lt;/p&gt;
+&lt;p&gt;数据存储：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-c++&quot; data-language=&quot;c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt;int w[N];//记录一下权重
+struct</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="线段树" scheme="http://gjwhhhh.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+    <category term="模板" scheme="http://gjwhhhh.github.io/tags/%E6%A8%A1%E6%9D%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo中完美插入本地图片</title>
     <link href="http://gjwhhhh.github.io/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/</id>
     <published>2021-11-12T06:11:00.000Z</published>
-    <updated>2021-11-12T09:00:46.204Z</updated>
+    <updated>2021-11-12T09:07:59.857Z</updated>
     
     
       
@@ -42,37 +72,11 @@
   </entry>
   
   <entry>
-    <title>图片引用测试</title>
-    <link href="http://gjwhhhh.github.io/2021/11/12/ce-shi/"/>
-    <id>http://gjwhhhh.github.io/2021/11/12/ce-shi/</id>
-    <published>2021-11-12T04:22:14.000Z</published>
-    <updated>2021-11-12T09:04:45.178Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/11/12/ce-shi/123.png&quot;&gt;&lt;/p&gt;
-&lt;img src=&quot;/2021/11/12/ce-shi/123.png&quot; class=&quot;&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="测试" scheme="http://gjwhhhh.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="测试" scheme="http://gjwhhhh.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>树状数组</title>
     <link href="http://gjwhhhh.github.io/2021/11/12/shu-zhuang-shu-zu-mo-ban/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/shu-zhuang-shu-zu-mo-ban/</id>
     <published>2021-11-12T04:09:00.000Z</published>
-    <updated>2021-11-12T09:04:04.059Z</updated>
+    <updated>2021-11-12T09:13:39.929Z</updated>
     
     
       
@@ -93,25 +97,24 @@
   </entry>
   
   <entry>
-    <title>博客搭建</title>
-    <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian/"/>
-    <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian/</id>
+    <title>博客搭建及美化</title>
+    <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian-ji-mei-hua/"/>
+    <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian-ji-mei-hua/</id>
     <published>2021-11-12T03:34:00.000Z</published>
-    <updated>2021-11-12T03:38:23.242Z</updated>
+    <updated>2021-11-12T14:17:10.281Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;博客主要采用github + hexo + hexo-theme-matery进行搭建&lt;/p&gt;
-&lt;p&gt;此博客使用github</summary>
+    <summary type="html">&lt;h2 id=&quot;搭建框架&quot;&gt;&lt;a href=&quot;#搭建框架&quot; class=&quot;headerlink&quot; title=&quot;搭建框架&quot;&gt;&lt;/a&gt;搭建框架&lt;/h2&gt;&lt;p&gt;博客主要采用github + hexo +</summary>
         
       
     
     
     
-    <category term="随笔" scheme="http://gjwhhhh.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="博客搭建" scheme="http://gjwhhhh.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
     <category term="笔记" scheme="http://gjwhhhh.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
@@ -120,10 +123,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://gjwhhhh.github.io/2021/11/10/hello/"/>
-    <id>http://gjwhhhh.github.io/2021/11/10/hello/</id>
+    <link href="http://gjwhhhh.github.io/2021/11/10/hellohexo/"/>
+    <id>http://gjwhhhh.github.io/2021/11/10/hellohexo/</id>
     <published>2021-11-10T12:28:00.000Z</published>
-    <updated>2021-11-12T03:33:22.641Z</updated>
+    <updated>2021-11-12T14:03:21.907Z</updated>
     
     
       
@@ -136,7 +139,7 @@
     
     
     
-    <category term="随笔" scheme="http://gjwhhhh.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="博客搭建" scheme="http://gjwhhhh.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
     <category term="笔记" scheme="http://gjwhhhh.github.io/tags/%E7%AC%94%E8%AE%B0/"/>

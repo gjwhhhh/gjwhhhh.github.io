@@ -4,8 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="资源, 葛济维的博客">
-    <meta name="description" content="资源 | 葛济维的博客">
+    <meta name="keywords" content="线段树, 葛济维的博客">
+    <meta name="description" content="线段树模板
+数据存储：
+int w[N];//记录一下权重
+struct node{
+    int l,r;//左右区间
+    int sum;//总和
+}tr[N*4];//记得开 4 倍空间
+
+void push_up(int u)">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +25,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>资源 | 葛济维的博客</title>
+    <title>线段树 | 葛济维的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -312,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">资源</h1>
+                    <h1 class="description center-align post-title">线段树</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +439,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">
+                                <span class="chip bg-color">线段树</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%A8%A1%E6%9D%BF/">
+                                <span class="chip bg-color">模板</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                算法
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -445,7 +470,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-10
+                    2021-11-12
                 </div>
                 
 
@@ -454,14 +479,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -484,7 +509,100 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>线段树模板</p>
+<p>数据存储：</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int w[N];//记录一下权重
+struct node{
+    int l,r;//左右区间
+    int sum;//总和
+}tr[N*4];//记得开 4 倍空间<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>void push_up(int u) 用子节点信息更新当前节点信息</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void push_up(int u)//利用它的两个儿子来算一下它的当前节点信息
+{
+    tr[u].sum=tr[u&lt;&lt;1].sum+tr[u&lt;&lt;1|1].sum;//左儿子 u&lt;&lt;1 ,右儿子 u&lt;&lt;1|1  
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>void build(int u,int l,int r) 根结点为u，在一段区间[l,r]上初始化线段树</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void build(int u,int l,int r)/*第一个参数，当前节点编号，第二个参数，左边界，第三个参数，右边界*/
+{
+    if(l==r)tr[u]={l,r,w[r]};//如果当前已经是叶节点了，那我们就直接赋值就可以了
+    else//否则的话，说明当前区间长度至少是 2 对吧，那么我们需要把当前区间分为左右两个区间，那先要找边界点
+    {
+        tr[u]={l,r};//这里记得赋值一下左右边界的初值
+
+        int mid=l+r&gt;&gt;1;//边界的话直接去计算一下 l + r 的下取整
+
+        build(u&lt;&lt;1,l,mid);//先递归一下左儿子
+
+        build(u&lt;&lt;1|1,mid+1,r);//然后递归一下右儿子
+
+        push_up(u);//做完两个儿子之后的话呢 push_up 一遍u 啊，更新一下当前节点信息
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>int query(int u,int l,int r) 查询从根节点u开始往下找对应的[l,r]区间的和</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">
+int query(int u,int l,int r)//查询的过程是从根结点开始往下找对应的一个区间
+{
+    if(l&lt;=tr[u].l&amp;&amp;tr[u].r&lt;=r)return tr[u].sum;//如果当前区间已经完全被包含了，那么我们直接返回它的值就可以了
+    //否则的话我们需要去递归来算
+    int mid=tr[u].l+tr[u].r&gt;&gt;1;//计算一下我们 当前 区间的中点是多少
+    //先判断一下和左边有没有交集
+
+    int sum=0;//用 sum 来表示一下我们的总和
+
+    if(mid&gt;=l)sum+=query(u&lt;&lt;1,l,r);//看一下我们当前区间的中点和左边有没有交集
+    if(r&gt;=mid+1)//看一下我们当前区间的中点和右边有没有交集
+    sum+=query(u&lt;&lt;1|1,l,r);
+
+    return sum;
+
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>void modify(int u,int x,int v) 根节点为u，修改位置为x，修改值 += v</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">void modify(int u,int x,int v)//第一个参数也就是当前节点的编号,第二个参数是要修改的位置，第三个参数是要修改的值
+{
+    if(tr[u].l==tr[u].r)tr[u].sum+=v; //如果当前已经是叶节点了，那我们就直接让他的总和加上 v 就可以了
+    //否则
+    else
+    {
+      int mid=tr[u].l+tr[u].r&gt;&gt;1;
+      //看一下 x 是在左半边还是在右半边
+      if(x&lt;=mid)modify(u&lt;&lt;1,x,v);//如果是在左半边，那就找左儿子
+      else modify(u&lt;&lt;1|1,x,v);//如果在右半边，那就找右儿子
+      //更新完之后当前节点的信息就要发生变化对吧，那么我们就需要 pushup 一遍
+      push_up(u);
+    }
+
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>主函数区间查询和点单修改操作</p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">int main()
+{
+    scanf("%d%d",&amp;n,&amp;m);
+    for(int i=1;i&lt;=n;i++)scanf("%d",&amp;w[i]);
+
+    build(1,1,n);/*第一个参数是根节点的下标，根节点是一号点，然后初始区间是 1 到 n */
+    //后面的话就是一些修改操作了
+    while(m--)
+    {
+        int k,a,b;
+        scanf("%d%d%d",&amp;k,&amp;a,&amp;b);
+
+        if(!k)printf("%d\n",query(1,a,b));//求和的时候，也是传三个参数，第一个的话是根节点的编号 ，第二个的话是我们查询的区间 
+        //第一个参数也就是当前节点的编号
+        else
+        modify(1,a,b);//第一个参数是根节点的下标,第二个参数是要修改的位置，第三个参数是要修改的值
+
+    }
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>线段树例题：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1266/">https://www.acwing.com/problem/content/1266/</a></p>
+<p><img src="/../images/2021-11-12-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/image-20211112203856738.png" alt="image-20211112203856738"></p>
+<p><img src="/../images/2021-11-12-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/image-20211112203859684.png" alt="image-20211112203859684"></p>
+
                 
             </div>
             <hr/>
@@ -510,7 +628,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://gjwhhhh.github.io/resources/index.html">http://gjwhhhh.github.io/resources/index.html</a>
+                    <a href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/">http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -547,7 +665,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">
+                                    <span class="chip bg-color">线段树</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%A8%A1%E6%9D%BF/">
+                                    <span class="chip bg-color">模板</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -722,13 +848,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/resources/index.html">
+                <a href="/2021/11/12/2021-11-12-xian-duan-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="资源">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="线段树">
                         
-                        <span class="card-title">资源</span>
+                        <span class="card-title">线段树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -739,17 +865,33 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            葛济维
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">
+                        <span class="chip bg-color">线段树</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%A8%A1%E6%9D%BF/">
+                        <span class="chip bg-color">模板</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -757,16 +899,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/resources/index.html">
+                <a href="/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="资源">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="hexo中完美插入本地图片">
                         
-                        <span class="card-title">资源</span>
+                        <span class="card-title">hexo中完美插入本地图片</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -777,17 +919,28 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            葛济维
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                    博客搭建
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo-renderer-marked/">
+                        <span class="chip bg-color">hexo-renderer-marked</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -915,6 +1068,13 @@
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 

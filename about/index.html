@@ -379,14 +379,14 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">4</a></span>
+    <span class="count"><a href="/categories">2</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">4</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -409,14 +409,14 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">4</a></span>
+    <span class="count"><a href="/categories">2</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">4</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -602,7 +602,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"随笔","value":2},{"name":"博客搭建","value":1},{"name":"算法","value":1},{"name":"测试","value":1}],
+                data: [{"name":"博客搭建","value":3},{"name":"算法","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -626,7 +626,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["笔记","hexo-renderer-marked","树状数组","测试"]
+                data: ["笔记","线段树","模板","hexo-renderer-marked","树状数组"]
             }
         ],
         yAxis: [
@@ -639,7 +639,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [2,1,1,1],
+                data: [2,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -815,6 +815,18 @@
             
             
             
+            <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">
+                <span class="chip center-align waves-effect waves-light chip-default">线段树</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%A8%A1%E6%9D%BF/">
+                <span class="chip center-align waves-effect waves-light chip-default">模板</span>
+            </a>
+            
+            
+            
             <a href="/tags/hexo-renderer-marked/">
                 <span class="chip center-align waves-effect waves-light chip-default">hexo-renderer-marked</span>
             </a>
@@ -823,12 +835,6 @@
             
             <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
                 <span class="chip center-align waves-effect waves-light chip-default">树状数组</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                <span class="chip center-align waves-effect waves-light chip-default">测试</span>
             </a>
             
             
@@ -962,7 +968,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">681</span>
+                        class="white-color">1.8k</span>
             
             
             
@@ -1143,7 +1149,8 @@ $(function () {
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
-
+    <script src="/js/click_show_text.js"></script>
+	
     
 
     
