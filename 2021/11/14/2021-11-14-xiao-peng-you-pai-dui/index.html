@@ -4,8 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 葛济维的博客">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="小朋友排队(树状数组), 葛济维的博客">
+    <meta name="description" content="小朋友排队(树状数组）
+n 个小朋友站成一排。
+现在要把他们按身高从低到高的顺序排列，但是每次只能交换位置相邻的两个小朋友。
+每个小朋友都有一个不高兴的程度。
+开始的时候，所有小朋友的不高兴程度都是 0。
+如果某个小朋友第一次被要求交换，则">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +22,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 葛济维的博客</title>
+    <title>小朋友排队(树状数组) | 葛济维的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -312,12 +317,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">小朋友排队(树状数组)</h1>
                 </div>
             </div>
         </div>
@@ -433,8 +438,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                                <span class="chip bg-color">笔记</span>
+                            <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
+                                <span class="chip bg-color">树状数组</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/">
+                                <span class="chip bg-color">逆序对</span>
                             </a>
                         
                     </div>
@@ -445,8 +454,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
-                                博客搭建
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                算法
                             </a>
                         
                     </div>
@@ -458,7 +467,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-10
+                    2021-11-14
                 </div>
                 
 
@@ -467,14 +476,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -494,19 +503,75 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+                <p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/description/1217/">小朋友排队(树状数组）</a></p>
+<p>n 个小朋友站成一排。</p>
+<p>现在要把他们按身高从低到高的顺序排列，但是每次只能交换位置相邻的两个小朋友。</p>
+<p>每个小朋友都有一个不高兴的程度。</p>
+<p>开始的时候，所有小朋友的不高兴程度都是 0。</p>
+<p>如果某个小朋友第一次被要求交换，则他的不高兴程度增加 1，如果第二次要求他交换，则他的不高兴程度增加 2（即不高兴程度为 3），依次类推。当要求某个小朋友第 k 次交换时，他的不高兴程度增加 k。</p>
+<p>请问，要让所有小朋友按从低到高排队，他们的不高兴程度之和最小是多少。</p>
+<p>如果有两个小朋友身高一样，则他们谁站在谁前面是没有关系的。</p>
+<p>输入格式<br>输入的第一行包含一个整数 n，表示小朋友的个数。</p>
+<p>第二行包含 n 个整数 H1,H2,…,Hn，分别表示每个小朋友的身高。</p>
+<p>输出格式<br>输出一行，包含一个整数，表示小朋友的不高兴程度和的最小值。</p>
+<p>数据范围<br>1≤n≤100000,<br>0≤Hi≤1000000<br>输入样例：<br>3<br>3 2 1<br>输出样例：<br>9<br>样例解释<br>首先交换身高为3和2的小朋友，再交换身高为3和1的小朋友，再交换身高为2和1的小朋友，每个小朋友的不高兴程度都是3，总和为9。</p>
+<p><strong>题解分析</strong>：<br>此题需要求他们的不高兴程度之和最小是多少，每个小朋友的第k次交换，不高兴的程度都会增加 k ，因此，每个小朋友如果交换 k 次到达正确位置，总的不高兴程度为1+2+3+…+k = （1+k) *k /2<br>那么此题应该让每个小朋友的交换次数达到最小，然后总的不高兴程度就是答案。</p>
+<p>首先我们要先知道逆序对的概念：如果前一个数比后一个数大（可以不相邻）的话两个数可以构成一个逆序对。一个序列如果逆序对数量为0，则这个序列呈非降序排列，是有序的，符合题意的从低到高排序。<br>因此每次交换我们应该进行有意义的交换，意思是每次交换必须使得逆序对数量减少1，如果进行了无意义的交换，那么每个小朋友的交换次数就不是最小，达不到最优，最终的结果应该是逆序对数量消为 0 </p>
+<p>设某个小朋友下标为 t<br>序列总的逆序对数量 = 每个小朋友逆序对数量总和<br>每个小朋友理论上的最小交换次数 = 与这个小朋友构成的逆序对数量 = 序列[1,t-1]中比他高的小朋友个数 + 序列 [ t+1, n] 中比这个小朋友低的小朋友个数。</p>
+<p><strong>证明</strong>：<br>我们求出每个小朋友的最小交换次数，求不高兴程度加起来就是最小的，是答案。<br>每个小朋友都取最小交换次数是可以取得的，因为冒泡排序就是采用了这样的思想使得每次循环都让一个数的逆序对降为 0 。结论得证。</p>
+<p><strong>解法</strong>：<br>使用树状数组存储每个数出现的次数，边遍历边维护树状数组，看代码理解吧<br>也可使用贪心 和 归并排序做。</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstring></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;algorithm></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstdio></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> LL<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1000005</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> h<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>tree<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>sum<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//tree[i]树状数组存储每个数出现的次数</span>
+
+<span class="token keyword">int</span> <span class="token function">lowbit</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">return</span> x<span class="token operator">&amp;</span><span class="token punctuation">(</span><span class="token operator">-</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span><span class="token keyword">int</span> v<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>x<span class="token punctuation">;</span> i<span class="token operator">&lt;</span>N<span class="token punctuation">;</span> i<span class="token operator">+</span><span class="token operator">=</span><span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        tree<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> v<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">int</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>x<span class="token punctuation">;</span> i<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">-</span><span class="token operator">=</span><span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        ans <span class="token operator">+</span><span class="token operator">=</span> tree<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        h<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//求每个学生前面比他高的人数</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">query</span><span class="token punctuation">(</span>N<span class="token number">-1</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token function">query</span><span class="token punctuation">(</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">add</span><span class="token punctuation">(</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">memset</span><span class="token punctuation">(</span>tree<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token keyword">sizeof</span> tree<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//求每个学生后面比他低的人数</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>n<span class="token punctuation">;</span> i<span class="token operator">>=</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token operator">--</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> <span class="token function">query</span><span class="token punctuation">(</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">add</span><span class="token punctuation">(</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    LL ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        ans <span class="token operator">+</span><span class="token operator">=</span> <span class="token punctuation">(</span>LL<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">+</span>sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">*</span>sum<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lld\n"</span><span class="token punctuation">,</span>ans<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
                 
             </div>
@@ -533,7 +598,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://gjwhhhh.github.io/2021/11/10/hellohexo/">http://gjwhhhh.github.io/2021/11/10/hellohexo/</a>
+                    <a href="http://gjwhhhh.github.io/2021/11/14/2021-11-14-xiao-peng-you-pai-dui/">http://gjwhhhh.github.io/2021/11/14/2021-11-14-xiao-peng-you-pai-dui/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -571,8 +636,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                                    <span class="chip bg-color">笔记</span>
+                                <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
+                                    <span class="chip bg-color">树状数组</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/">
+                                    <span class="chip bg-color">逆序对</span>
                                 </a>
                             
                         </div>
@@ -748,13 +817,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/11/12/2021-11-12-bo-ke-da-jian-ji-mei-hua/">
+                <a href="/2021/11/14/2021-11-14-tie-lu-yu-gong-lu-floyd/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="博客搭建及美化">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="铁路与公路(Floyd)">
                         
-                        <span class="card-title">博客搭建及美化</span>
+                        <span class="card-title">铁路与公路(Floyd)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -765,14 +834,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-14
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
-                                    博客搭建
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
                                 </a>
                             
                             
@@ -782,8 +851,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
+                    <a href="/tags/Floyd/">
+                        <span class="chip bg-color">Floyd</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF/">
+                        <span class="chip bg-color">单源最短路</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%A8%A1%E6%9D%BF%E9%A2%98/">
+                        <span class="chip bg-color">模板题</span>
                     </a>
                     
                 </div>
@@ -794,16 +871,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/10/hellohexo/">
+                <a href="/2021/11/12/2021-11-12-xian-duan-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="线段树">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">线段树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -814,26 +891,29 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
-                                    博客搭建
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
+                    <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">
+                        <span class="chip bg-color">线段树</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%A8%A1%E6%9D%BF/">
+                        <span class="chip bg-color">模板</span>
                     </a>
                     
                 </div>

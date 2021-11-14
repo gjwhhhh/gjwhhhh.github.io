@@ -6,7 +6,7 @@
   <link href="http://gjwhhhh.github.io/atom.xml" rel="self"/>
   
   <link href="http://gjwhhhh.github.io/"/>
-  <updated>2021-11-12T12:39:32.029Z</updated>
+  <updated>2021-11-14T14:15:10.000Z</updated>
   <id>http://gjwhhhh.github.io/</id>
   
   <author>
@@ -17,23 +17,76 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>铁路与公路(Floyd)</title>
+    <link href="http://gjwhhhh.github.io/2021/11/14/2021-11-14-tie-lu-yu-gong-lu-floyd/"/>
+    <id>http://gjwhhhh.github.io/2021/11/14/2021-11-14-tie-lu-yu-gong-lu-floyd/</id>
+    <published>2021-11-14T14:15:00.000Z</published>
+    <updated>2021-11-14T14:15:10.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.acwing.com/problem/content/4077/&quot;&gt;4074. 铁路与公路&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;某国家有 n 个城市（编号 1∼n）和 m</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="Floyd" scheme="http://gjwhhhh.github.io/tags/Floyd/"/>
+    
+    <category term="单源最短路" scheme="http://gjwhhhh.github.io/tags/%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+    
+    <category term="模板题" scheme="http://gjwhhhh.github.io/tags/%E6%A8%A1%E6%9D%BF%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小朋友排队(树状数组)</title>
+    <link href="http://gjwhhhh.github.io/2021/11/14/2021-11-14-xiao-peng-you-pai-dui/"/>
+    <id>http://gjwhhhh.github.io/2021/11/14/2021-11-14-xiao-peng-you-pai-dui/</id>
+    <published>2021-11-14T13:51:00.000Z</published>
+    <updated>2021-11-14T13:54:52.791Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.acwing.com/problem/content/description/1217/&quot;&gt;小朋友排队(树状数组）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;n</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="树状数组" scheme="http://gjwhhhh.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    
+    <category term="逆序对" scheme="http://gjwhhhh.github.io/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/"/>
+    
+  </entry>
+  
+  <entry>
     <title>线段树</title>
     <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/</id>
     <published>2021-11-12T12:39:00.000Z</published>
-    <updated>2021-11-12T12:39:32.029Z</updated>
+    <updated>2021-11-14T15:00:24.958Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;线段树模板&lt;/p&gt;
-&lt;p&gt;数据存储：&lt;/p&gt;
-&lt;pre class=&quot; language-c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt;int w[N];//记录一下权重
-struct node{
-    int l,r;//左右区间
-    int</summary>
+    <summary type="html">&lt;h2 id=&quot;线段树模板&quot;&gt;&lt;a href=&quot;#线段树模板&quot; class=&quot;headerlink&quot; title=&quot;线段树模板&quot;&gt;&lt;/a&gt;线段树模板&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -103,7 +156,7 @@ struct node{
     <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian-ji-mei-hua/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian-ji-mei-hua/</id>
     <published>2021-11-12T03:34:00.000Z</published>
-    <updated>2021-11-12T15:04:18.397Z</updated>
+    <updated>2021-11-12T15:13:53.311Z</updated>
     
     
       
