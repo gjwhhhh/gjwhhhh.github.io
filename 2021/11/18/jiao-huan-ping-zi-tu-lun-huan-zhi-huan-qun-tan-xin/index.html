@@ -4,13 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo中完美插入本地图片, 葛济维的博客">
-    <meta name="description" content="hexo中完美插入本地图片两种方法解决解决hexo插入本地图片
-先hexo new “文章名”，把图片放入_posts/文章名 文件夹中
+    <meta name="keywords" content="交换瓶子(图论、环、置换群、贪心), 葛济维的博客">
+    <meta name="description" content="交换瓶子
+有 N 个瓶子，编号 1∼N，放在架子上。
+比如有 5 个瓶子：
+2 1 3 5 4
 
-第一种，使用官方引用图片方式
+要求每次拿起 2 个瓶子，交换它们的位置。
+经过若干次后，使得瓶子的序号为：
+1 2 3 4 5
 
-{% asset_img example.jpg [title] %">
+对于这么简单的情况，显然，至少需要交换 2">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +26,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo中完美插入本地图片 | 葛济维的博客</title>
+    <title>交换瓶子(图论、环、置换群、贪心) | 葛济维的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -317,12 +321,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo中完美插入本地图片</h1>
+                    <h1 class="description center-align post-title">交换瓶子(图论、环、置换群、贪心)</h1>
                 </div>
             </div>
         </div>
@@ -438,8 +442,20 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo-renderer-marked/">
-                                <span class="chip bg-color">hexo-renderer-marked</span>
+                            <a href="/tags/%E5%9B%BE%E8%AE%BA/">
+                                <span class="chip bg-color">图论</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%8E%AF/">
+                                <span class="chip bg-color">环</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BD%AE%E6%8D%A2%E7%BE%A4/">
+                                <span class="chip bg-color">置换群</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                                <span class="chip bg-color">贪心</span>
                             </a>
                         
                     </div>
@@ -450,8 +466,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
-                                博客搭建
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                算法
                             </a>
                         
                     </div>
@@ -463,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-12
+                    2021-11-18
                 </div>
                 
 
@@ -472,14 +488,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    340
+                    566
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -499,52 +515,75 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="hexo中完美插入本地图片"><a href="#hexo中完美插入本地图片" class="headerlink" title="hexo中完美插入本地图片"></a>hexo中完美插入本地图片</h2><p>两种方法解决解决hexo插入本地图片</p>
-<p>先hexo new “文章名”，把图片放入<code>_posts/文章名</code> 文件夹中</p>
-<ol>
-<li>第一种，使用官方引用图片方式</li>
-</ol>
-<pre><code>{% asset_img example.jpg [title] %}
+                <p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1226/">交换瓶子</a></p>
+<p>有 N 个瓶子，编号 1∼N，放在架子上。</p>
+<p>比如有 5 个瓶子：</p>
+<pre><code>2 1 3 5 4
 </code></pre>
-<ol start="2">
-<li>第二种使用插件</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked </a> 解决hexo插入本地图片</p>
-<p>_config.yml文件</p>
-<pre><code>post_asset_folder: true
-marked:  
-  prependRoot: true  
-  postAsset: true
+<p>要求每次拿起 2 个瓶子，交换它们的位置。</p>
+<p>经过若干次后，使得瓶子的序号为：</p>
+<pre><code>1 2 3 4 5
 </code></pre>
-<p>使用语法：</p>
-<pre><code>![](image.jpg)
+<p>对于这么简单的情况，显然，至少需要交换 22 次就可以复位。</p>
+<p>如果瓶子更多呢？你可以通过编程来解决。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行包含一个整数 N，表示瓶子数量。</p>
+<p>第二行包含 N 个整数，表示瓶子目前的排列状况。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出一个正整数，表示至少交换多少次，才能完成排序。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤N≤10000</p>
+<h4 id="输入样例1："><a href="#输入样例1：" class="headerlink" title="输入样例1："></a>输入样例1：</h4><pre><code>5
+3 1 2 5 4
 </code></pre>
-<p>这样可以引入，但是无法在markdown编辑器中显示图片</p>
-<p>采用这种下面这种引入方式可解决：</p>
-<ul>
-<li><p>在“Blog-&gt;source”下新建”images”文件夹。注意”images”与”_posts”同级。</p>
-</li>
-<li><p>在Typora中“文件-&gt;设置偏好-&gt;图像“。在插入图片时”复制到指定路径“设置为</p>
-</li>
-</ul>
-<pre class=" language-text"><code class="language-text">../../source/images//${filename}
+<h4 id="输出样例1："><a href="#输出样例1：" class="headerlink" title="输出样例1："></a>输出样例1：</h4><pre><code>3
 </code></pre>
-<p>每次将图片插入到images下的文章名的文件夹下</p>
-<p>引入图片，问题可完美解决</p>
-<ol start="3">
-<li>使用图床引入外链</li>
-</ol>
-<p>图床网站 <a target="_blank" rel="noopener" href="https://sm.ms/">https://sm.ms/</a></p>
-<p>感觉这个最简单    </p>
-<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul>
-<li><p>两种方法只有第二种引入图片在markdown编辑器中可见</p>
-</li>
-<li><p>参考互联网上文章使用hexo-asset-image插件，高版本hexo并不适配</p>
-</li>
-</ul>
-<h3 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h3><p>知乎：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/419663130">https://www.zhihu.com/question/419663130</a></p>
-<p>博客：<a target="_blank" rel="noopener" href="http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/">http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</a></p>
-<p>官方文档<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders.html">https://hexo.io/zh-cn/docs/asset-folders.html</a></p>
+<h4 id="输入样例2："><a href="#输入样例2：" class="headerlink" title="输入样例2："></a>输入样例2：</h4><pre><code>5
+5 4 3 2 1
+</code></pre>
+<h4 id="输出样例2："><a href="#输出样例2：" class="headerlink" title="输出样例2："></a>输出样例2：</h4><pre><code>2
+</code></pre>
+<h4 id="题解分析："><a href="#题解分析：" class="headerlink" title="题解分析："></a>题解分析：</h4><p>环、置换群问题</p>
+<p>比如有 5个瓶子：序列为2 1 3 5 4</p>
+<p>下标：1 2 3 4 5 </p>
+<p>序号：2 1 3 5 4</p>
+<p>那么，此序列构成的环为 </p>
+<p><img src="/../images/%E7%8E%AF%E3%80%81%E7%BD%AE%E6%8D%A2%E7%BE%A4%E9%97%AE%E9%A2%98/image-20211118220425050.png" alt="image-20211118220425050"></p>
+<p>每个序号指向序列复位后每个序号应该在的位置，就是环的构建方式。</p>
+<p>构建出来的环满足这样的特性：每个点的出度和入度均为 1 </p>
+<p>可以发现，</p>
+<p>如果我们交换不同环中的两个点：两个环会合并成一个环</p>
+<p>如果交换同一个环中的两个点：一个环会分裂成两个环</p>
+<p>如果序列有n个数，我们最终的结果是需要将环分裂为 n 个，这样每个点都指向他自己，序列也会复位。</p>
+<p>因此我们必须每次交换同一个环中的点，可知交换一次环数加1，统计环的个数，如果有 k 个环，则需要 n - k 个操作使其变成 n 个环。</p>
+<p>此题得解。</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstring></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;algorithm></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">10005</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">bool</span> st<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">;</span>
+    cin<span class="token operator">>></span>n<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        cin<span class="token operator">>></span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">int</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>st<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            k<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//把此环中的每个结点都遍历一遍 ，关键在于 j = a[j] </span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span>i<span class="token punctuation">;</span> st<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">!=</span><span class="token boolean">true</span><span class="token punctuation">;</span> j<span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                st<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    cout<span class="token operator">&lt;&lt;</span>n<span class="token operator">-</span>k<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 
                 
             </div>
@@ -571,7 +610,7 @@ marked:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://gjwhhhh.github.io/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/">http://gjwhhhh.github.io/2021/11/12/hexo-zhong-wan-mei-cha-ru-ben-di-tu-pian/</a>
+                    <a href="http://gjwhhhh.github.io/2021/11/18/jiao-huan-ping-zi-tu-lun-huan-zhi-huan-qun-tan-xin/">http://gjwhhhh.github.io/2021/11/18/jiao-huan-ping-zi-tu-lun-huan-zhi-huan-qun-tan-xin/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -609,8 +648,20 @@ marked:
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo-renderer-marked/">
-                                    <span class="chip bg-color">hexo-renderer-marked</span>
+                                <a href="/tags/%E5%9B%BE%E8%AE%BA/">
+                                    <span class="chip bg-color">图论</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%8E%AF/">
+                                    <span class="chip bg-color">环</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BD%AE%E6%8D%A2%E7%BE%A4/">
+                                    <span class="chip bg-color">置换群</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                                    <span class="chip bg-color">贪心</span>
                                 </a>
                             
                         </div>
@@ -782,17 +833,18 @@ marked:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/11/12/2021-11-12-xian-duan-shu/">
+                <a href="/2021/11/18/jiao-huan-ping-zi-tu-lun-huan-zhi-huan-qun-tan-xin/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="线段树">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="交换瓶子(图论、环、置换群、贪心)">
                         
-                        <span class="card-title">线段树</span>
+                        <span class="card-title">交换瓶子(图论、环、置换群、贪心)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -802,9 +854,9 @@ marked:
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -817,15 +869,24 @@ marked:
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">
-                        <span class="chip bg-color">线段树</span>
+                    <a href="/tags/%E5%9B%BE%E8%AE%BA/">
+                        <span class="chip bg-color">图论</span>
                     </a>
                     
-                    <a href="/tags/%E6%A8%A1%E6%9D%BF/">
-                        <span class="chip bg-color">模板</span>
+                    <a href="/tags/%E7%8E%AF/">
+                        <span class="chip bg-color">环</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BD%AE%E6%8D%A2%E7%BE%A4/">
+                        <span class="chip bg-color">置换群</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%B4%AA%E5%BF%83/">
+                        <span class="chip bg-color">贪心</span>
                     </a>
                     
                 </div>
@@ -839,13 +900,13 @@ marked:
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/12/shu-zhuang-shu-zu-mo-ban/">
+                <a href="/2021/11/18/ri-zhi-tong-ji-hua-dong-chuang-kou-shuang-zhi-zhen-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="树状数组">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="日志统计（滑动窗口，双指针问题）">
                         
-                        <span class="card-title">树状数组</span>
+                        <span class="card-title">日志统计（滑动窗口，双指针问题）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -856,7 +917,7 @@ marked:
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
                             </span>
                         <span class="publish-author">
                             
@@ -873,8 +934,16 @@ marked:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
-                        <span class="chip bg-color">树状数组</span>
+                    <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">
+                        <span class="chip bg-color">滑动窗口</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
+                        <span class="chip bg-color">双指针`````````````````</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/">
+                        <span class="chip bg-color">蓝桥杯</span>
                     </a>
                     
                 </div>
