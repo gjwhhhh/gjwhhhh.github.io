@@ -443,7 +443,7 @@ ts id表示在 ts 时刻编号 id 的帖子收到一个”赞”。
                             </a>
                         
                             <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
-                                <span class="chip bg-color">双指针`````````````````</span>
+                                <span class="chip bg-color">双指针</span>
                             </a>
                         
                             <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/">
@@ -520,7 +520,7 @@ ts id表示在 ts 时刻编号 id 的帖子收到一个”赞”。
 <p>输出格式<br>按从小到大的顺序输出热帖 id。</p>
 <p>每个 id 占一行。</p>
 <p>数据范围<br>1≤K≤N≤105,<br>0≤ts,id≤105,<br>1≤D≤10000<br>输入样例：<br>7 10 2<br>0 1<br>0 10<br>10 10<br>10 1<br>9 1<br>100 3<br>100 3<br>输出样例：<br>1<br>3</p>
-<p>==题解思路==：<br>滑动窗口，双指针问题：<br>遍历时间段，前指针 i ，后指针 j ，logs[i].second对应的帖子点赞增加，前指针 i++<br>如果 logs[i].first - logs[j].first &gt; D 超过题目给定的时刻区间，<br>则把logs[j].second 对应的帖子点赞数减少，<br>同时 j++，直到不满足 logs[i].first - logs[j].first &gt; D 。</p>
+<h2 id="题解思路："><a href="#题解思路：" class="headerlink" title="题解思路："></a>题解思路：</h2><p>滑动窗口，双指针问题：<br>遍历时间段，前指针 i ，后指针 j ，logs[i].second对应的帖子点赞增加，前指针 i++<br>如果 logs[i].first - logs[j].first &gt; D 超过题目给定的时刻区间，<br>则把logs[j].second 对应的帖子点赞数减少，<br>同时 j++，直到不满足 logs[i].first - logs[j].first &gt; D 。</p>
 <pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstring></span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;algorithm></span></span>
@@ -627,7 +627,7 @@ PII logs<span class="token punctuation">[</span>N<span class="token punctuation"
                                 </a>
                             
                                 <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
-                                    <span class="chip bg-color">双指针`````````````````</span>
+                                    <span class="chip bg-color">双指针</span>
                                 </a>
                             
                                 <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/">
@@ -1107,7 +1107,7 @@ PII logs<span class="token punctuation">[</span>N<span class="token punctuation"
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">8.7k</span>
+                        class="white-color">8.8k</span>
             
             
             

@@ -5,15 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="1维2维3维前缀和, 葛济维的博客">
-    <meta name="description" content="设b[]数组为前缀和数组，s[]数组为原数组
-一维前缀和
-构造差分数组：$b[i]=s[i]-s[i-1]$
-
-求原数组：$s[i]=b[i]+s[i-1]$
-
-给 l 到 r 区间加 c ，插入操作：
-b[l] += c
-b[r+1] -">
+    <meta name="description" content="应用前缀和主要应用于对区间内每个数进行加或减操作时，如果遍历区间进行操作，时间复杂度较高，在数据量大时无法AC，如果对差分数组进行操作的话，可以把时间复杂度降为O(1)，可以AC
+下面设b[]数组为前缀和数组，s[]数组为原数组
+一维前缀和">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -475,14 +469,14 @@ b[r+1] -">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    335
+                    444
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -502,13 +496,14 @@ b[r+1] -">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>设b[]数组为前缀和数组，s[]数组为原数组</p>
+                <h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>前缀和主要应用于对区间内每个数进行加或减操作时，如果遍历区间进行操作，时间复杂度较高，在数据量大时无法AC，如果对差分数组进行操作的话，可以把时间复杂度降为O(1)，可以AC</p>
+<p>下面设b[]数组为前缀和数组，s[]数组为原数组</p>
 <h3 id="一维前缀和"><a href="#一维前缀和" class="headerlink" title="一维前缀和"></a>一维前缀和</h3><ul>
 <li><p>构造差分数组：$b[i]=s[i]-s[i-1]$</p>
 </li>
-<li><p>求原数组：$s[i]=b[i]+s[i-1]$</p>
+<li><p>求原数组（前缀和操作）：$s[i]=b[i]+s[i-1]$</p>
 </li>
-<li><p>给 l 到 r 区间加 c ，插入操作：</p>
+<li><p>给 l 到 r 区间加 c ，对差分数组的插入操作：</p>
 <p>b[l] += c</p>
 <p>b[r+1] -= c</p>
 </li>
@@ -516,9 +511,9 @@ b[r+1] -">
 <h3 id="二维前缀和"><a href="#二维前缀和" class="headerlink" title="二维前缀和"></a>二维前缀和</h3><ul>
 <li><p>构造差分数组：$b[i][j]=s[i][j]-s[i-1][j]-s[i][j-1]+s[i-1][j-1]$</p>
 </li>
-<li><p>求原数组：$s[i][j]=b[i][j]+s[i-1][j]+s[i][j-1]-s[i-1][j-1]$ </p>
+<li><p>求原数组（前缀和操作）：$s[i][j]=b[i][j]+s[i-1][j]+s[i][j-1]-s[i-1][j-1]$ </p>
 </li>
-<li><p>给(x1,y1)到(x2,y2) 加 c ,插入操作：</p>
+<li><p>给(x1,y1)到(x2,y2) 加 c ,对差分数组的插入操作：</p>
 <p>$b[x1][y1]+=c$ </p>
 <p>$b[x2+1][y1]-=c$</p>
 <p>$b[x1][y2+1]-=c$</p>
@@ -530,7 +525,7 @@ b[r+1] -">
 </li>
 <li><p>由上式 可得 b(x,y,z) 计算公式，此处省略</p>
 </li>
-<li><p>给(x1,y1,z1) 到 (x2,y2,z2) 加 h，插入操作 ：</p>
+<li><p>给(x1,y1,z1) 到 (x2,y2,z2) 加 h，对差分数组的插入操作 ：</p>
 <pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">get</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">,</span><span class="token keyword">int</span> j<span class="token punctuation">,</span><span class="token keyword">int</span> k<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>i<span class="token number">-1</span><span class="token punctuation">)</span><span class="token operator">*</span>B<span class="token operator">+</span><span class="token punctuation">(</span>j<span class="token number">-1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">*</span>C<span class="token operator">+</span><span class="token punctuation">(</span>k<span class="token number">-1</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
@@ -1086,7 +1081,7 @@ b[r+1] -">
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">8.7k</span>
+                        class="white-color">8.8k</span>
             
             
             
