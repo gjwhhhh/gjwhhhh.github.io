@@ -6,7 +6,7 @@
   <link href="http://gjwhhhh.github.io/atom.xml" rel="self"/>
   
   <link href="http://gjwhhhh.github.io/"/>
-  <updated>2021-11-14T14:15:10.000Z</updated>
+  <updated>2021-11-17T15:06:28.911Z</updated>
   <id>http://gjwhhhh.github.io/</id>
   
   <author>
@@ -15,6 +15,111 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>三体攻击(3维前缀和)</title>
+    <link href="http://gjwhhhh.github.io/2021/11/17/2021-11-17-san-ti-gong-ji-3-wei-qian-zhui-he/"/>
+    <id>http://gjwhhhh.github.io/2021/11/17/2021-11-17-san-ti-gong-ji-3-wei-qian-zhui-he/</id>
+    <published>2021-11-17T15:01:00.000Z</published>
+    <updated>2021-11-17T15:06:28.911Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.acwing.com/problem/content/description/1234/&quot;&gt;三体攻击&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;三体人将对地球发起攻击。&lt;/p&gt;
+&lt;p&gt;为了抵御攻击，地球人派出了 A×B×C 艘战舰，在太空中排成一个</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="前缀和" scheme="http://gjwhhhh.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1维2维3维前缀和</title>
+    <link href="http://gjwhhhh.github.io/2021/11/17/2021-11-17-1-wei-2-wei-3-wei-qian-zhui-he/"/>
+    <id>http://gjwhhhh.github.io/2021/11/17/2021-11-17-1-wei-2-wei-3-wei-qian-zhui-he/</id>
+    <published>2021-11-17T13:17:00.000Z</published>
+    <updated>2021-11-17T15:06:10.950Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;设b[]数组为前缀和数组，s[]数组为原数组&lt;/p&gt;
+&lt;h3 id=&quot;一维前缀和&quot;&gt;&lt;a href=&quot;#一维前缀和&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="前缀和" scheme="http://gjwhhhh.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【寒窑赋】吕蒙正</title>
+    <link href="http://gjwhhhh.github.io/2021/11/16/2021-11-16-han-yao-fu-lu-meng-zheng/"/>
+    <id>http://gjwhhhh.github.io/2021/11/16/2021-11-16-han-yao-fu-lu-meng-zheng/</id>
+    <published>2021-11-16T14:43:00.000Z</published>
+    <updated>2021-11-16T15:02:23.823Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;寒窑赋&quot;&gt;&lt;a href=&quot;#寒窑赋&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="摘抄" scheme="http://gjwhhhh.github.io/categories/%E6%91%98%E6%8A%84/"/>
+    
+    
+    <category term="文言文" scheme="http://gjwhhhh.github.io/tags/%E6%96%87%E8%A8%80%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《现代操作系统》书籍记录笔记</title>
+    <link href="http://gjwhhhh.github.io/2021/11/15/xian-dai-cao-zuo-xi-tong-shu-ji-ji-lu-bi-ji/"/>
+    <id>http://gjwhhhh.github.io/2021/11/15/xian-dai-cao-zuo-xi-tong-shu-ji-ji-lu-bi-ji/</id>
+    <published>2021-11-15T09:31:00.000Z</published>
+    <updated>2021-11-15T09:32:50.807Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;第一章引论&quot;&gt;&lt;a href=&quot;#第一章引论&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://gjwhhhh.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="《现代操作系统》" scheme="http://gjwhhhh.github.io/tags/%E3%80%8A%E7%8E%B0%E4%BB%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E3%80%8B/"/>
+    
+    <category term="操作系统" scheme="http://gjwhhhh.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>铁路与公路(Floyd)</title>
@@ -79,14 +184,14 @@
     <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/</id>
     <published>2021-11-12T12:39:00.000Z</published>
-    <updated>2021-11-14T15:00:24.958Z</updated>
+    <updated>2021-11-15T07:11:51.050Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;线段树模板&quot;&gt;&lt;a href=&quot;#线段树模板&quot; class=&quot;headerlink&quot; title=&quot;线段树模板&quot;&gt;&lt;/a&gt;线段树模板&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;线段树模板&quot;&gt;&lt;a href=&quot;#线段树模板&quot; class=&quot;headerlink&quot; title=&quot;线段树模板&quot;&gt;&lt;/a&gt;线段树模板&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
         
       
     
