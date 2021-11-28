@@ -6,7 +6,7 @@
   <link href="http://gjwhhhh.github.io/atom.xml" rel="self"/>
   
   <link href="http://gjwhhhh.github.io/"/>
-  <updated>2021-11-18T15:33:36.667Z</updated>
+  <updated>2021-11-28T09:59:41.333Z</updated>
   <id>http://gjwhhhh.github.io/</id>
   
   <author>
@@ -15,6 +15,137 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://gjwhhhh.github.io/2021/11/27/javaguide-yue-du-bi-ji/"/>
+    <id>http://gjwhhhh.github.io/2021/11/27/javaguide-yue-du-bi-ji/</id>
+    <published>2021-11-27T10:12:02.409Z</published>
+    <updated>2021-11-28T09:59:41.333Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaGuide阅读笔记&quot;&gt;&lt;a href=&quot;#JavaGuide阅读笔记&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>算法笔记（长期更新）</title>
+    <link href="http://gjwhhhh.github.io/2021/11/26/suan-fa-bi-ji/"/>
+    <id>http://gjwhhhh.github.io/2021/11/26/suan-fa-bi-ji/</id>
+    <published>2021-11-26T13:44:00.000Z</published>
+    <updated>2021-11-27T11:48:01.963Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;算法学习目录&quot;&gt;&lt;a href=&quot;#算法学习目录&quot; class=&quot;headerlink&quot; title=&quot;算法学习目录&quot;&gt;&lt;/a&gt;算法学习目录&lt;/h1&gt;&lt;p&gt;基础算法</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="笔记" scheme="http://gjwhhhh.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>付账问题（贪心问题、均值不等式）</title>
+    <link href="http://gjwhhhh.github.io/2021/11/23/2021-11-23-fu-zhang-wen-ti-tan-xin-wen-ti-jun-zhi-bu-deng-shi/"/>
+    <id>http://gjwhhhh.github.io/2021/11/23/2021-11-23-fu-zhang-wen-ti-tan-xin-wen-ti-jun-zhi-bu-deng-shi/</id>
+    <published>2021-11-23T14:04:00.000Z</published>
+    <updated>2021-11-23T14:06:25.913Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;付账问题（贪心问题、均值不等式）&quot;&gt;&lt;a href=&quot;#付账问题（贪心问题、均值不等式）&quot; class=&quot;headerlink&quot; title=&quot;付账问题（贪心问题、均值不等式）&quot;&gt;&lt;/a&gt;付账问题（贪心问题、均值不等式）&lt;/h2&gt;&lt;p&gt; &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="蓝桥杯" scheme="http://gjwhhhh.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="贪心" scheme="http://gjwhhhh.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+    <category term="均值不等式" scheme="http://gjwhhhh.github.io/tags/%E5%9D%87%E5%80%BC%E4%B8%8D%E7%AD%89%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>糖果传递（贪心）——《算法竞赛进阶指南》,微软面试题 , HAOI2008</title>
+    <link href="http://gjwhhhh.github.io/2021/11/22/2021-11-22-tang-guo-chuan-di-tan-xin/"/>
+    <id>http://gjwhhhh.github.io/2021/11/22/2021-11-22-tang-guo-chuan-di-tan-xin/</id>
+    <published>2021-11-22T14:04:00.000Z</published>
+    <updated>2021-11-24T04:58:16.009Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;糖果传递（贪心）&quot;&gt;&lt;a href=&quot;#糖果传递（贪心）&quot; class=&quot;headerlink&quot; title=&quot;糖果传递（贪心）&quot;&gt;&lt;/a&gt;糖果传递（贪心）&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="贪心" scheme="http://gjwhhhh.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大臣的旅费(树的直径、dfs、bfs、树形dp)</title>
+    <link href="http://gjwhhhh.github.io/2021/11/20/2021-11-20-da-chen-de-lu-fei-shu-de-zhi-jing-dfs-bfs-shu-xing-dp/"/>
+    <id>http://gjwhhhh.github.io/2021/11/20/2021-11-20-da-chen-de-lu-fei-shu-de-zhi-jing-dfs-bfs-shu-xing-dp/</id>
+    <published>2021-11-20T03:38:00.000Z</published>
+    <updated>2021-11-20T03:38:19.287Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="蓝桥杯" scheme="http://gjwhhhh.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="树的直径" scheme="http://gjwhhhh.github.io/tags/%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84/"/>
+    
+    <category term="dfs" scheme="http://gjwhhhh.github.io/tags/dfs/"/>
+    
+    <category term="树形dp" scheme="http://gjwhhhh.github.io/tags/%E6%A0%91%E5%BD%A2dp/"/>
+    
+  </entry>
   
   <entry>
     <title>交换瓶子(图论、环、置换群、贪心)</title>
@@ -40,13 +171,13 @@
     <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
+    <category term="贪心" scheme="http://gjwhhhh.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
+    
     <category term="图论" scheme="http://gjwhhhh.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
     
     <category term="环" scheme="http://gjwhhhh.github.io/tags/%E7%8E%AF/"/>
     
     <category term="置换群" scheme="http://gjwhhhh.github.io/tags/%E7%BD%AE%E6%8D%A2%E7%BE%A4/"/>
-    
-    <category term="贪心" scheme="http://gjwhhhh.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
@@ -74,11 +205,11 @@
     <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
+    <category term="蓝桥杯" scheme="http://gjwhhhh.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
     <category term="滑动窗口" scheme="http://gjwhhhh.github.io/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
     
     <category term="双指针" scheme="http://gjwhhhh.github.io/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
-    
-    <category term="蓝桥杯" scheme="http://gjwhhhh.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
@@ -87,7 +218,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/17/2021-11-17-san-ti-gong-ji-3-wei-qian-zhui-he/"/>
     <id>http://gjwhhhh.github.io/2021/11/17/2021-11-17-san-ti-gong-ji-3-wei-qian-zhui-he/</id>
     <published>2021-11-17T15:01:00.000Z</published>
-    <updated>2021-11-17T15:06:28.911Z</updated>
+    <updated>2021-11-26T03:44:00.815Z</updated>
     
     
       
@@ -164,7 +295,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/15/xian-dai-cao-zuo-xi-tong-shu-ji-ji-lu-bi-ji/"/>
     <id>http://gjwhhhh.github.io/2021/11/15/xian-dai-cao-zuo-xi-tong-shu-ji-ji-lu-bi-ji/</id>
     <published>2021-11-15T09:31:00.000Z</published>
-    <updated>2021-11-15T09:32:50.807Z</updated>
+    <updated>2021-11-20T14:09:19.007Z</updated>
     
     
       
