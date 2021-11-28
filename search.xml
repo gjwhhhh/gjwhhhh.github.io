@@ -8,7 +8,7 @@
       <link href="/2021/11/27/javaguide-yue-du-bi-ji/"/>
       <url>/2021/11/27/javaguide-yue-du-bi-ji/</url>
       
-        <content type="html"><![CDATA[<h1 id="JavaGuide阅读笔记"><a href="#JavaGuide阅读笔记" class="headerlink" title="JavaGuide阅读笔记"></a>JavaGuide阅读笔记</h1><p>1.面向对象和面向过程的区别</p><p>进程和线程：</p><p>进程是对一个程序的抽象，进程的创建和销毁就是一个程序的开始和结束。</p><p>进程是资源调度的最小单位</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="JavaGuide阅读笔记"><a href="#JavaGuide阅读笔记" class="headerlink" title="JavaGuide阅读笔记"></a>JavaGuide阅读笔记</h1><p>1.面向对象和面向过程的区别</p><p>进程和线程：</p><p>进程是对一个程序的抽象，进程的创建和销毁就是一个程序的开始和结束。</p><p>进程是资源调度的最小单位，一个进程可以有多个线程。</p><p>进程进行上下文切换较慢，而线程进行切换很快。</p><blockquote><p>进程是程序的一次执行过程，是系统运行程序的基本单位，系统运行一个程序就是一个进程从创建，运行到消亡的过程。</p><p>在java中，当我们启动main函数时，就是启动了一个JVM的进程，而main函数所在的线程就是这个进程的一个线程，也成为主线程</p></blockquote><blockquote><p>线程是一个比进程更小的执行单位。一个进程在执行的过程中可以产生多个线程，同类的多个线程共享进程的堆和方法区，但每个线程有自己的程序计数器、虚拟机栈、本地方法栈，系统在产生一个线程，或者在多个线程之间切换工作时，负担比进程要少，线程可以称为轻量级的进程</p></blockquote>]]></content>
       
       
       
