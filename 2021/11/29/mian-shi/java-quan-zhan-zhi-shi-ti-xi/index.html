@@ -4,14 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaGuide阅读笔记, 葛济维的博客">
-    <meta name="description" content="JavaGuide阅读笔记1.面向对象和面向过程的区别
-进程和线程：
-进程是对一个程序的抽象，进程的创建和销毁就是一个程序的开始和结束。
-进程是资源调度的最小单位，一个进程可以有多个线程。
-进程进行上下文切换较慢，而线程进行切换很快。
-
-进">
+    <meta name="keywords" content="Java全栈知识体系笔记, 葛济维的博客">
+    <meta name="description" content="Java全栈知识体系笔记https://www.pdai.tech/md/outline/x-outline.html
+面向对象的三大特性面向对象的三大特性：封装、继承、多态
+封装：利用抽象数据结构将数据和基于数据的操作封装起来，使其构成一">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JavaGuide阅读笔记 | 葛济维的博客</title>
+    <title>Java全栈知识体系笔记 | 葛济维的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -255,12 +251,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaGuide阅读笔记</h1>
+                    <h1 class="description center-align post-title">Java全栈知识体系笔记</h1>
                 </div>
             </div>
         </div>
@@ -405,28 +401,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-28
+                    2021-11-29
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-29
+                    2021-11-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    310
+                    3.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    13 分
                 </div>
                 
 
@@ -446,18 +442,260 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JavaGuide阅读笔记"><a href="#JavaGuide阅读笔记" class="headerlink" title="JavaGuide阅读笔记"></a>JavaGuide阅读笔记</h1><p>1.面向对象和面向过程的区别</p>
-<p>进程和线程：</p>
-<p>进程是对一个程序的抽象，进程的创建和销毁就是一个程序的开始和结束。</p>
-<p>进程是资源调度的最小单位，一个进程可以有多个线程。</p>
-<p>进程进行上下文切换较慢，而线程进行切换很快。</p>
+                <h1 id="Java全栈知识体系笔记"><a href="#Java全栈知识体系笔记" class="headerlink" title="Java全栈知识体系笔记"></a>Java全栈知识体系笔记</h1><p><a target="_blank" rel="noopener" href="https://www.pdai.tech/md/outline/x-outline.html">https://www.pdai.tech/md/outline/x-outline.html</a></p>
+<h2 id="面向对象的三大特性"><a href="#面向对象的三大特性" class="headerlink" title="面向对象的三大特性"></a>面向对象的三大特性</h2><p>面向对象的三大特性：封装、继承、多态</p>
+<p>封装：利用抽象数据结构将数据和基于数据的操作封装起来，使其构成一个不可分割的整体，尽可能的隐藏内部的细节，通过对外提供接口和外界进行交互，用户不必知道内部的细节，但可以通过对外的接口来访问该对象。</p>
+<p>继承：一个类继承另一个类，将会继承父类中所有的属性和方法，如果是私有变量的话，子类会继承到但是无法直接访问。</p>
 <blockquote>
-<p>进程是程序的一次执行过程，是系统运行程序的基本单位，系统运行一个程序就是一个进程从创建，运行到消亡的过程。</p>
-<p>在java中，当我们启动main函数时，就是启动了一个JVM的进程，而main函数所在的线程就是这个进程的一个线程，也成为主线程</p>
+<p>父类的引用指向子类的对象称为向上转型</p>
 </blockquote>
+<p>多态：分为运行时多态和编译时多态。</p>
+<p>编译时多态主要指方法的重载</p>
 <blockquote>
-<p>线程是一个比进程更小的执行单位。一个进程在执行的过程中可以产生多个线程，同类的多个线程共享进程的堆和方法区，但每个线程有自己的程序计数器、虚拟机栈、本地方法栈，系统在产生一个线程，或者在多个线程之间切换工作时，负担比进程要少，线程可以称为轻量级的进程</p>
+<p>重载，简单说，就是函数或者方法有相同的名称，但是参数列表不相同的情形，这样的同名不同参数的函数或者方法之间，互相称之为重载函数或者方法。</p>
 </blockquote>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">namespace</span> OOP1
+<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/// &lt;summary></span>
+    <span class="token comment" spellcheck="true">/// 编译时的多态：方法的重载</span>
+    <span class="token comment" spellcheck="true">/// &lt;/summary></span>
+   <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Overload</span>
+    <span class="token punctuation">{</span>
+       <span class="token comment" spellcheck="true">/// &lt;summary></span>
+       <span class="token comment" spellcheck="true">/// 方法的签名：包含方法的名字和参数（参数的数量和个数）</span>
+       <span class="token comment" spellcheck="true">/// &lt;/summary></span>
+       <span class="token comment" spellcheck="true">/// &lt;param name="a">&lt;/param></span>
+       <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">DisplayOverload</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">)</span>
+       <span class="token punctuation">{</span>
+           Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">"DisplayOverload: "</span><span class="token operator">+</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+
+       <span class="token comment" spellcheck="true">/// &lt;summary></span>
+       <span class="token comment" spellcheck="true">/// 方法的签名：包含方法的名字和参数（参数的数量和个数）</span>
+       <span class="token comment" spellcheck="true">/// &lt;/summary></span>
+       <span class="token comment" spellcheck="true">/// &lt;param name="a">&lt;/param></span>
+       <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">DisplayOverload</span><span class="token punctuation">(</span>string a<span class="token punctuation">)</span>
+       <span class="token punctuation">{</span>
+           Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">"DisplayOverload: "</span><span class="token operator">+</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+
+       <span class="token comment" spellcheck="true">/// &lt;summary></span>
+       <span class="token comment" spellcheck="true">/// 方法的签名：包含方法的名字和参数（参数的数量和个数）</span>
+       <span class="token comment" spellcheck="true">/// &lt;/summary></span>
+       <span class="token comment" spellcheck="true">/// &lt;param name="a">&lt;/param></span>
+       <span class="token comment" spellcheck="true">/// &lt;param name="b">&lt;/param></span>
+       <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">DisplayOverload</span><span class="token punctuation">(</span>string a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span>
+       <span class="token punctuation">{</span>
+           Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">"DisplayOverload: "</span><span class="token operator">+</span>a <span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>运行时多态：是指对象的引用所指向的具体类型只有在运行时才能确定。</p>
+<p>运行时多态有三个条件：</p>
+<ul>
+<li>继承</li>
+<li>重写</li>
+<li>向上转型</li>
+</ul>
+<h2 id="Java基础知识点"><a href="#Java基础知识点" class="headerlink" title="Java基础知识点"></a>Java基础知识点</h2><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>数据类型：八大基本数据类型，每个基本数据类型都有对应的包装类</p>
+<p>boolean、byte、short、int、long、float、double、char</p>
+<p>缓存池：int的缓存池大小是 -127~128</p>
+<p>在这个范围内，使用</p>
+<pre class=" language-cpp"><code class="language-cpp">Integer a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> Integer b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+a <span class="token operator">==</span> <span class="token function">b</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+    
+Integer c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">Integer</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Integer d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">Integer</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+c <span class="token operator">==</span> <span class="token function">d</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+</code></pre>
+<p>使用Integer a = 2; 会从缓存池中找到这个值</p>
+<h3 id="String、StringBuffer、StringBuilder"><a href="#String、StringBuffer、StringBuilder" class="headerlink" title="String、StringBuffer、StringBuilder"></a>String、StringBuffer、StringBuilder</h3><p>String 不可变，每次new String(“123”)会重新创建一个对象，用字符串直接赋值会从字符串常量池中找是否有相同的对象赋值给它</p>
+<p>StringBuffer可变，是线程安全的，内部使用 synchronized 进行同步</p>
+<p>StringBuilder可变，不是线程安全的</p>
+<p>String.intern() 可以把某个String对象放到字符串常量池中，并返回他的引用</p>
+<h3 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h3><h4 id="参数传递"><a href="#参数传递" class="headerlink" title="参数传递"></a>参数传递</h4><p>Java中参数的传递是值传递，而不是引用传递。</p>
+<p>一个对象的引用作为方法的参数传递时，传递的是对象引用的一个拷贝，因此如果在方法内部改变这个对象引用指向的对象的字段值可以改变原对象，但是如果改变对象引用指向的对象，对原来的对象引用没有影响</p>
+<p>java中隐式类型转换不能向下转型，必须显式的声明</p>
+<p>switch中不能选择long类型</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jfl-xx/p/12369647.html">java对象与对象引用 </a> </p>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><ul>
+<li><p>抽象类不可被实例化，他的方法可以是没有实现的抽象的方法，也可以有实现的方法。</p>
+</li>
+<li><p>在java8之前，接口可以看做是完全抽象的类，没有任何的方法的实现。但是在java8以后接口中也可以定义实现的方法和字段。方法是public、字段是public static final</p>
+</li>
+<li><p>super可以调用父类的构造方法完成父类的初始化操作</p>
+</li>
+<li><p>重写：基于子类继承了父类，而子类中重写了从父类中继承过来的某个方法</p>
+</li>
+</ul>
+<p>方法名、参数类型、参数顺序完全相同，修饰符的范围子类可以扩大但不能缩小</p>
+<ul>
+<li>重载：一个类中方法名相同但是参数类型、参数个数、参数顺序有一个不同，不能只以返回值类型不同来重载。</li>
+</ul>
+<h3 id="Object通用方法"><a href="#Object通用方法" class="headerlink" title="Object通用方法"></a>Object通用方法</h3><p>包装类型中，equals 比较对象的值是否相同，== 比较对象地址是否相同</p>
+<p>hashCode（）方法可以返回某个对象的哈希值，这个哈希值用来区别不同的对象</p>
+<p>toString（）、clone（）</p>
+<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>final可以修饰变量、方法</p>
+<p>修饰变量的话，这个变量只能被赋值一次后就不能更改了</p>
+<p>修饰方法的话，这个方法无法被子类覆盖（重写）</p>
+<p>static修饰变量，这个变量属于这个类，这个类实例化后的所有对象都共享这一个static变量</p>
+<p>static修饰方法，这个方法属于这个类，static类中只能使用静态变量和方法、不能使用非静态的</p>
+<h3 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h3><p>反射可以提供运行时的类信息，并且这个类可以在运行时才加载进来，甚至在编译时期该类的 .class 不存在也可以加载进来。</p>
+<p>一般我们的对象的类型在编译期间就已经确定了，我们可以通过反射机制直接创建对象，即使这个对象的类型在编译期是未知的。</p>
+<p>Java反射提供的功能：</p>
+<ul>
+<li>在运行时判断一个对象属于哪个类</li>
+<li>在运行时构造任意一个类的对象</li>
+<li>在运行时判断某个类中的所有属性和方法（甚至是private方法）</li>
+<li>在运行时调用任意一个对象的方法</li>
+</ul>
+<p>反射的基本应用：</p>
+<ul>
+<li>获取Class对象</li>
+<li>判断是否为某个类的实例</li>
+<li>创建实例</li>
+<li>获取某个Class对象的方法</li>
+<li>获取构造器信息</li>
+<li>获取类的成员变量</li>
+<li>invoke调用方法</li>
+<li>利用反射创建数组</li>
+</ul>
+<h3 id="Java-与-C-的区别"><a href="#Java-与-C-的区别" class="headerlink" title="Java 与 C++ 的区别"></a>Java 与 C++ 的区别</h3><ul>
+<li>Java 是纯粹的面向对象语言，所有的对象都继承自 java.lang.Object，C++ 为了兼容 C 即支持面向对象也支持面向过程。</li>
+<li>Java 通过虚拟机从而实现跨平台特性，但是 C++ 依赖于特定的平台。</li>
+<li>Java 没有指针，它的引用可以理解为安全指针，而 C++ 具有和 C 一样的指针。</li>
+<li>Java 支持自动垃圾回收，而 C++ 需要手动回收。</li>
+<li>Java 不支持多重继承，只能通过实现多个接口来达到相同目的，而 C++ 支持多重继承。</li>
+<li>Java 不支持操作符重载，虽然可以对两个 String 对象支持加法运算，但是这是语言内置支持的操作，不属于操作符重载，而 C++ 可以。</li>
+<li>Java 的 goto 是保留字，但是不可用，C++ 可以使用 goto。</li>
+<li>Java 不支持条件编译，C++ 通过 #ifdef #ifndef 等预处理命令从而实现条件编译。</li>
+</ul>
+<h3 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h3><p>try..with…rource 可以自动的关闭一些在try中创建的变量</p>
+<h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><ul>
+<li><p>泛型的本质是为了参数化类型，在不创建新类型的情况下，通过泛型指定不同类型来控制形参具体限制的类型。在泛型的使用过程中，操作的数据类型指定为一个参数，这种参数类型可以使用在接口、方法、类上，称为泛型接口、泛型方法、泛型类。</p>
+</li>
+<li><p>引入泛型的意义：适用于多种数据类型执行相同的代码。（代码复用）</p>
+</li>
+<li><p>泛型类、泛型接口、泛型方法</p>
+</li>
+<li><p>使用&lt;? extends E&gt; 指定泛型的上限，使用&lt;? super E&gt; 指定泛型的下限</p>
+</li>
+<li><p>如何理解java中的泛型是伪泛型</p>
+</li>
+</ul>
+<p>泛型是jdk1.5加入的，java语法上支持泛型，但是在编译时会擦除所有的泛型，“类型擦除”会替换所有的泛型为具体的类型。</p>
+<h3 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h3><p>注解用于对代码进行说明，可以对类、方法、字段、方法参数、局部变量等进行注解。他的作用：生成文档、编译检查、编译时动态处理、运行时动态处理。</p>
+<p>注解的分类：</p>
+<ul>
+<li><p>Java中自带的标准注解：@Override、@Deprecated、@SuppressWarnings；元注解：</p>
+</li>
+<li><p>元注解：用于定义注解的注解。包括@Document、@Target、@Retention、@Inherited。Java8中新增 @Repeatable、@Native</p>
+</li>
+<li><p>自定义注解</p>
+</li>
+</ul>
+<p>元注解详细解释：</p>
+<p>@Target 标明注解使用的范围,参数如下</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">enum</span> ElementType <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/** Class, interface (including annotation type), or enum declaration */</span>
+    TYPE<span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">/** Field declaration (includes enum constants) */</span>
+    FIELD<span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">/** Method declaration */</span>
+    METHOD<span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">/** Formal parameter declaration */</span>
+    PARAMETER<span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">/** Constructor declaration */</span>
+    CONSTRUCTOR<span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">/** Local variable declaration */</span>
+    LOCAL_VARIABLE<span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">/** Annotation type declaration */</span>
+    ANNOTATION_TYPE<span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">/** Package declaration */</span>
+    PACKAGE<span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">/**
+     * Type parameter declaration
+     *
+     * @since 1.8
+     */</span>
+    TYPE_PARAMETER<span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">/**
+     * Use of a type
+     *
+     * @since 1.8
+     */</span>
+    TYPE_USE
+<span class="token punctuation">}</span>
+</code></pre>
+<p>@Retetion用于标明注解被保留的阶段，参数如下</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">enum</span> RetentionPolicy <span class="token punctuation">{</span>
+ 
+    SOURCE<span class="token punctuation">,</span>    <span class="token comment" spellcheck="true">// 源文件保留</span>
+    CLASS<span class="token punctuation">,</span>       <span class="token comment" spellcheck="true">// 编译期保留，默认值</span>
+    RUNTIME   <span class="token comment" spellcheck="true">// 运行期保留，可通过反射去获取注解信息</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>注解不支持继承，但是如果某个类使用了被@Inherited修饰的注解，会让这个类的子类自动拥有这个注解</p>
+<h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><ul>
+<li><p>异常是指程序运行中出现的各种状况，Java中通过Throwable的各种子类描述不同的异常。Throwable是Java中所有错误和异常的超类，他有两个子类 Error、Exception，用来指示发生了异常情况。</p>
+</li>
+<li><p>Error类及其子类：程序中无法处理的错误，表示应用程序出现了严重的错误。</p>
+</li>
+<li><p>Exception类及其子类：分为运行时异常和编译时异常。</p>
+<p>编译时异常必须在编写代码中解决，要么用try catch捕获要么用throw抛出</p>
+<p>运行时异常通常是由逻辑错误，算术问题引出，编译器无法识别，只能在编写中尽量避免逻辑错误。</p>
+</li>
+<li><p>异常可以自定义，自定义时需要继承Exception类。</p>
+</li>
+<li><p>异常分为可查的异常和不可查的异常。可查的异常包括编译时异常，不可查的异常包括运行时异常和Error错误，对于可查的异常必须进行处理try catch或者throw抛出</p>
+</li>
+<li><p>throws用来声明一个异常，告知方法调用者可能出现的异常。throw用来抛出一个异常（自己解决不了，抛出给上层）</p>
+</li>
+</ul>
+<h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><p>著作权归<a target="_blank" rel="noopener" href="https://pdai.tech所有./">https://pdai.tech所有。</a> 链接：<a target="_blank" rel="noopener" href="https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html">https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html</a></p>
+<h1 id="复习专栏"><a href="#复习专栏" class="headerlink" title="复习专栏"></a>复习专栏</h1><h3 id="Day2复习-纯手敲"><a href="#Day2复习-纯手敲" class="headerlink" title="Day2复习(纯手敲)"></a>Day2复习(纯手敲)</h3><p><strong>面向对象三大特性：封装、继承、多态</strong></p>
+<p>封装：用抽象的数据类型把数据和操作数据的方法封装在一起，形成一个整体，通过对外的接口与外部联系，这样用户不必知道内部的细节，但可以通过对象对外提供的接口来访问该对象。</p>
+<p>优点：减少耦合，可以独立的开发测试；减轻维护的负担，更容易被程序员理解；</p>
+<p>提高代码的重用性。</p>
+<p>继承：一个类可以继承另一个类从而获得他的属性和方法。java只支持单继承，但可以实现多个接口</p>
+<p>多态：分为运行时多态和编译时多态</p>
+<p>编译时多态指的是方法的重载，方法名相同，参数的类型、个数、顺序不同</p>
+<p>运行时多态指的是：程序中定义的对象引用所指向的具体类型在运行时才确定。</p>
+<p>父类的引用可以指向子类的对象，叫做向上转型。</p>
+<p>运行时多态的条件：继承、向上转型、覆盖</p>
+<p><strong>Java基础知识</strong></p>
+<p>java有八种基本类型，boolean、byte、short、int、long、double、float、char</p>
+<p>每种都有其对应的包装类，包装类可以自动装箱拆箱。如 Integer i = 1;</p>
+<p>Integer的缓存池大小为 -128~127 ，在这个范围内，Integer包装类在赋值的时候会检查缓存池有没有相同的值。</p>
+<p><strong>String、StringBuffer、StringBuilder</strong></p>
+<p>String长度不可变，使用new String（）必定会创建一个新对象在堆里面，而如果使用字符串赋值的方式，字符串会检查字符串常量池，如果没有会放入，如果有会返回常量池中的地址。</p>
+<p>StringBuffer可变、StringBuilder可变。两者的区别是StringBuffer是线程安全的，其中加了锁，StringBuilder不是线程安全的</p>
+<p>String.intern()函数可以将字符串值放入常量池并返回这个字符串的一个引用</p>
+<p><strong>运算</strong></p>
+<p>Java不支持向下的隐式转换，比如double型的数据不能直接赋值给float。</p>
+<p>当采用运算符计算时，java会自动将类型提升进行运算，比如：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">byte</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">byte</span> c <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span> 会报错，因为两个<span class="token keyword">byte</span>被提升为<span class="token keyword">int</span>型
+</code></pre>
+<p>byte、short会被提升为int，float和double运算会被提升为double</p>
+<p>？继承的访问权限：如果修饰为private则子类无法访问，protected则子类可以访问，</p>
+<p>public所有类都可以访问</p>
+<p><strong>抽象类</strong>是具有抽象方法的类，不可实例化，接口是全部为抽象方法的类，是抽象类的特例。jdk1.8开始接口中可以定义一些默认的已经实现的方法</p>
+<p>super用来调用父类的构造函数帮助对子类进行初始化操作。</p>
+<p><strong>重写和重载：</strong></p>
+<p>重写指的是在继承中，子类重写了父类中已经有的一个方法，方法名、参数完全和父类中的方法相同。</p>
+<p>重载指的是在同一个类中，一些方法名相同，但是参数个数、参数类型、参数顺便不尽相同的方法，他们是对这个方法的重载。</p>
+<p><strong>Object的方法</strong></p>
+<p>Object中hashCode返回一个哈希值</p>
+<p>equals比较的是两个对象是否相同，== 比较的是对象引用的地址是否相同。</p>
+<p>final修饰过的属性只能被赋值一次后，就不能再改变了。修饰过的方法不可被重写（覆盖）</p>
+<p>static修饰变量，这个变量属于这个类，在类加载时初始化，被这个类实例化出来的所有对象共享。static修饰方法，称为静态方法，静态方法中不能使用类中定义的非静态的方法和变量</p>
+<p><strong>反射</strong>：反射指的是Java在运行时可以获取自身类的信息</p>
+<p>泛型：泛型的本质是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数可以用在类、接口、方法中，分别被称为泛型类、泛型接口、泛型方法。</p>
+<p>引入泛型的意义：适用于多种数据类型执行相同的代码；泛型的类型在使用时指定，不需要强制转换（它是类型安全的，编译器会检查类型）</p>
+<p>Java泛型这个特性是从JDK1.5加入的，    Java在语法上支持泛型，但是在编译阶段会进行“<strong>类型擦除</strong>”，所有的泛型表示都会被替换为具体的类型，就像完全没有泛型一样。</p>
 
                 
             </div>
@@ -484,7 +722,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://gjwhhhh.github.io/2021/11/28/javaguide-yue-du-bi-ji/">http://gjwhhhh.github.io/2021/11/28/javaguide-yue-du-bi-ji/</a>
+                    <a href="http://gjwhhhh.github.io/2021/11/29/mian-shi/java-quan-zhan-zhi-shi-ti-xi/">http://gjwhhhh.github.io/2021/11/29/mian-shi/java-quan-zhan-zhi-shi-ti-xi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -969,13 +1207,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/11/29/java-quan-zhan-zhi-shi-ti-xi/">
+                <a href="/2021/11/29/mian-shi/mian-shi-zi-liao-zheng-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Java全栈知识体系笔记">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Java全栈知识体系笔记</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -988,6 +1226,43 @@
                         <span class="publish-date">
                             <i class="far fa-clock fa-fw icon-date"></i>2021-11-29
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            葛济维
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/11/28/mian-shi/javaguide-yue-du-bi-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="JavaGuide阅读笔记">
+                        
+                        <span class="card-title">JavaGuide阅读笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1009,55 +1284,6 @@
                     
                     <a href="/tags/%E9%9D%A2%E8%AF%95/">
                         <span class="chip bg-color">面试</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/11/26/suan-fa-bi-ji/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="算法笔记（长期更新）">
-                        
-                        <span class="card-title">算法笔记（长期更新）</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-26
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
@@ -1261,7 +1487,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">16.2k</span>
+                        class="white-color">26.6k</span>
             
             
             

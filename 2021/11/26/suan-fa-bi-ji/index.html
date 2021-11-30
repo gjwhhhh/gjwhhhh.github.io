@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="算法笔记（长期更新）, 葛济维的博客">
-    <meta name="description" content="算法学习目录基础算法 
+    <meta name="description" content="算法学习目录时空复杂度分析
+基础算法 
 
 排序二分高精度前缀和与差分双指针算法位运算离散化区间合并
 
@@ -15,7 +16,7 @@
 
 搜索与图论 
 
-DFS与BFS树与图的遍历：拓扑排序最">
+DFS与BFS树与图的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -412,14 +413,14 @@ DFS与BFS树与图的遍历：拓扑排序最">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-27
+                    2021-11-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.6k
                 </div>
                 
 
@@ -446,7 +447,8 @@ DFS与BFS树与图的遍历：拓扑排序最">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="算法学习目录"><a href="#算法学习目录" class="headerlink" title="算法学习目录"></a>算法学习目录</h1><p>基础算法 </p>
+                <h1 id="算法学习目录"><a href="#算法学习目录" class="headerlink" title="算法学习目录"></a>算法学习目录</h1><p>时空复杂度分析</p>
+<p>基础算法 </p>
 <blockquote>
 <p>排序<br>二分<br>高精度<br>前缀和与差分<br>双指针算法<br>位运算<br>离散化<br>区间合并</p>
 </blockquote>
@@ -467,8 +469,8 @@ DFS与BFS树与图的遍历：拓扑排序最">
 <p>背包问题<br>线性DP<br>区间DP<br>计数类DP<br>数位统计DP<br>状态压缩DP<br>树形DP<br>记忆化搜索</p>
 </blockquote>
 <p>贪心</p>
-<p>时空复杂度分析</p>
 <h1 id="时间复杂度和算法的选择"><a href="#时间复杂度和算法的选择" class="headerlink" title="时间复杂度和算法的选择"></a>时间复杂度和算法的选择</h1><p><img src="/../images/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/Pasted%20image%2020211025132736.png" alt="Pasted image 20211025132736"></p>
+<h1 id="学习网站或资料"><a href="#学习网站或资料" class="headerlink" title="学习网站或资料"></a>学习网站或资料</h1><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/105467597">知乎算法专栏 </a>  </p>
 <h1 id="基础算法"><a href="#基础算法" class="headerlink" title="基础算法"></a>基础算法</h1><h2 id="归并排序模板"><a href="#归并排序模板" class="headerlink" title="归并排序模板"></a>归并排序模板</h2><pre class=" language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">//归并排序</span>
 <span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>tmp<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
 
@@ -493,7 +495,7 @@ DFS与BFS树与图的遍历：拓扑排序最">
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h1 id="数论"><a href="#数论" class="headerlink" title="数论"></a>数论</h1><h2 id="约数个数定理和约数和定理"><a href="#约数个数定理和约数和定理" class="headerlink" title="约数个数定理和约数和定理"></a>约数个数定理和约数和定理</h2><p>约数个数定理可以计算出一个数约数的个数，在小学奥数与中学竞赛中大有用处。<br><strong>定理</strong></p>
+<h1 id="数论"><a href="#数论" class="headerlink" title="数论"></a>数论</h1><h2 id="约数"><a href="#约数" class="headerlink" title="约数"></a>约数</h2><h3 id="约数个数定理和约数和定理"><a href="#约数个数定理和约数和定理" class="headerlink" title="约数个数定理和约数和定理"></a>约数个数定理和约数和定理</h3><p>约数个数定理可以计算出一个数约数的个数，在小学奥数与中学竞赛中大有用处。<br><strong>定理</strong></p>
 <p>对于一个大于1正整数n可以分解质因数<br><img src="https://bkimg.cdn.bcebos.com/formula/afef3bf76b93359a0067ea80e57bca0e.svg"><br>则n的正约数的个数就是<br><img src="https://bkimg.cdn.bcebos.com/formula/21c38a03ef417a187c0a202b37ce59c4.svg"><br>n的(a₁+1)(a₂+1)(a₃+1)…(ak+1)个==正约数的和==为<br>$f(n)=(p_1^0+p_1^1+p_1^2+…p_1^{a_1})(p_2^0+p_2^1+p_2^2+…p_2^{a_2})…(p_k^0+p_k^1+p_k^2+…p_k^{a_k}）$<br>其中a1、a2、a3…ak是p1、p2、p3，…pk的指数。</p>
 <p>例题：<br><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/872/">https://www.acwing.com/problem/content/872/</a><br><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/873/">https://www.acwing.com/problem/content/873/</a></p>
 <p><strong>定理简证</strong></p>
@@ -506,7 +508,7 @@ DFS与BFS树与图的遍历：拓扑排序最">
 <p>1∼N 中与 N 互质的数的个数被称为欧拉函数，记为 ϕ(N)。<br>若在算数基本定理中，$N=p^{a_1}_1p^{a_2}_2…p^{a_m}_m$，则：<br>$ϕ(N) = N×\frac{p1−1}{p1}×\frac{p2−1}{p2}×…×\frac{p_m−1}{p_m}$</p>
 </blockquote>
 <p>例题：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/875/">873. 欧拉函数</a></p>
-<h2 id="素数的筛法"><a href="#素数的筛法" class="headerlink" title="素数的筛法"></a>素数的筛法</h2><h3 id="1-最普通的筛法-O-nlogn"><a href="#1-最普通的筛法-O-nlogn" class="headerlink" title="1.最普通的筛法 O(nlogn)"></a>1.最普通的筛法 O(nlogn)</h3><p>C++ 代码</p>
+<h2 id="素数（质数）的筛法"><a href="#素数（质数）的筛法" class="headerlink" title="素数（质数）的筛法"></a>素数（质数）的筛法</h2><h3 id="1-最普通的筛法-O-nlogn"><a href="#1-最普通的筛法-O-nlogn" class="headerlink" title="1.最普通的筛法 O(nlogn)"></a>1.最普通的筛法 O(nlogn)</h3><p>C++ 代码</p>
 <pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">get_primes2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
 
@@ -552,7 +554,28 @@ DFS与BFS树与图的遍历：拓扑排序最">
 <h2 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h2><h5 id="乘法逆元的定义"><a href="#乘法逆元的定义" class="headerlink" title="乘法逆元的定义"></a>乘法逆元的定义</h5><blockquote>
 <p>若整数 b，m 互质，并且对于任意的整数 a，如果满足 b|a，则存在一个整数 x，使得 $a/b≡a×x(mod\ m)$，则称 x 为 b 的模 m 乘法逆元，记为$b^{−1}(mod\ m)$。<br>b 存在乘法逆元的充要条件是 b 与模数 m 互质。当模数 m 为质数时，$b^{m−2}$ 即为 b 的乘法逆元</p>
 </blockquote>
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1>
+<h2 id="扩展欧几里得算法"><a href="#扩展欧几里得算法" class="headerlink" title="扩展欧几里得算法"></a>扩展欧几里得算法</h2><p>前置知识：</p>
+<blockquote>
+<p>裴蜀定理：若a,b是整数,且gcd(a,b)=d，那么对于任意的整数x、y，ax+by都一定是d的倍数，特别地，一定存在整数x,y，使ax+by=d成立。</p>
+</blockquote>
+<p><strong>拓展欧几里得算法</strong>：它可以在辗转相除途中求出不定方程 <img src="https://www.zhihu.com/equation?tex=ax+by=c" alt="[公式]"> 的一组解。</p>
+<p>公式推导如下：</p>
+<p><img src="/../images/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/image-20211130105444207.png" alt="image-20211130105444207"></p>
+<p>代码模板：</p>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">exgcd</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&amp;</span>x<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&amp;</span>y<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>b <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> a<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">int</span> d <span class="token operator">=</span> <span class="token function">exgcd</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> a <span class="token operator">%</span> b<span class="token punctuation">,</span> y<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//这里交换了x和y</span>
+    y <span class="token operator">-</span><span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">/</span> b<span class="token punctuation">)</span> <span class="token operator">*</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> d<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
                 
             </div>
             <hr/>
@@ -1059,7 +1082,7 @@ DFS与BFS树与图的遍历：拓扑排序最">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/11/28/javaguide-yue-du-bi-ji/">
+                <a href="/2021/11/28/mian-shi/javaguide-yue-du-bi-ji/">
                     <div class="card-image">
                         
                         
@@ -1366,7 +1389,7 @@ DFS与BFS树与图的遍历：拓扑排序最">
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">16.2k</span>
+                        class="white-color">26.6k</span>
             
             
             
