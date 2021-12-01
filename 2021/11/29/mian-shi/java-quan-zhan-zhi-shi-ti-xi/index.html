@@ -32,9 +32,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="葛济维的博客" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="葛济维的博客" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -408,21 +408,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-30
+                    2021-12-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.8k
+                    4.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    13 分
+                    16 分
                 </div>
                 
 
@@ -654,7 +654,9 @@ c <span class="token operator">==</span> <span class="token function">d</span> <
 <li><p>throws用来声明一个异常，告知方法调用者可能出现的异常。throw用来抛出一个异常（自己解决不了，抛出给上层）</p>
 </li>
 </ul>
-<h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><p>著作权归<a target="_blank" rel="noopener" href="https://pdai.tech所有./">https://pdai.tech所有。</a> 链接：<a target="_blank" rel="noopener" href="https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html">https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html</a></p>
+<h3 id="Java类加载机制"><a href="#Java类加载机制" class="headerlink" title="Java类加载机制"></a>Java类加载机制</h3><p>Java类加载主要有：加载、验证、准备、解析、初始化五个过程，加载、验证、准备、初始化是按顺序开始的，解析则不一定</p>
+<p>类的加载：查找并加载类的二进制数据。</p>
+<h3 id="反射-1"><a href="#反射-1" class="headerlink" title="反射"></a>反射</h3><h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><p>著作权归<a target="_blank" rel="noopener" href="https://pdai.tech所有./">https://pdai.tech所有。</a> 链接：<a target="_blank" rel="noopener" href="https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html">https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html</a></p>
 <h1 id="复习专栏"><a href="#复习专栏" class="headerlink" title="复习专栏"></a>复习专栏</h1><h3 id="Day2复习-纯手敲"><a href="#Day2复习-纯手敲" class="headerlink" title="Day2复习(纯手敲)"></a>Day2复习(纯手敲)</h3><p><strong>面向对象三大特性：封装、继承、多态</strong></p>
 <p>封装：用抽象的数据类型把数据和操作数据的方法封装在一起，形成一个整体，通过对外的接口与外部联系，这样用户不必知道内部的细节，但可以通过对象对外提供的接口来访问该对象。</p>
 <p>优点：减少耦合，可以独立的开发测试；减轻维护的负担，更容易被程序员理解；</p>
@@ -696,6 +698,31 @@ c <span class="token operator">==</span> <span class="token function">d</span> <
 <p>泛型：泛型的本质是为了参数化类型（在不创建新的类型的情况下，通过泛型指定的不同类型来控制形参具体限制的类型）。也就是说在泛型使用过程中，操作的数据类型被指定为一个参数，这种参数可以用在类、接口、方法中，分别被称为泛型类、泛型接口、泛型方法。</p>
 <p>引入泛型的意义：适用于多种数据类型执行相同的代码；泛型的类型在使用时指定，不需要强制转换（它是类型安全的，编译器会检查类型）</p>
 <p>Java泛型这个特性是从JDK1.5加入的，    Java在语法上支持泛型，但是在编译阶段会进行“<strong>类型擦除</strong>”，所有的泛型表示都会被替换为具体的类型，就像完全没有泛型一样。</p>
+<h3 id="Day3复习"><a href="#Day3复习" class="headerlink" title="Day3复习"></a>Day3复习</h3><p>Java面向对象的三大特性：封装、继承、多态</p>
+<p>封装：用抽象数据类型将数据和基于数据的操作封装在一起，尽可能的隐藏内部的信息，通过对外的接口和外界联系，用户无需知道内部的细节，只需要通过对外的接口和这个对象发生联系。</p>
+<p>继承：一个类可以继承另一个类获取他所有的属性和方法。父类引用指向子类的对象叫做<strong>向上转型</strong></p>
+<p>多态：包括运行时多态和编译时多态。编译时多态主要指重载。方法的重载指的是方法名相同，但是参数类型、参数个数、参数顺序有一个不同。</p>
+<p>运行时多态指的是父类的引用指向的对象在运行时才能确定。运行时多态发生的条件有：继承、重写、向上转型。</p>
+<hr>
+<p>final可以修饰变量、方法、类</p>
+<p>修饰变量，这个变量如果是基本数据类型，则这个变量的值只能赋值一次，之后不能改变，如果是引用，那么不能修改这个引用指向其他的对象，但是指向的对象本身可以修改。</p>
+<p>修饰方法，这个方法不能被覆盖。</p>
+<p>修饰类，这个类不能被继承。</p>
+<p>反射：反射可以在运行时获取任何类的属性和方法，这个类可以在运行时才加载进来，可以使用Class.forName(“”)的形式控制类的加载。</p>
+<p>反射的应用：1.可以判断某个对象是否是某个类2.可以获取某个类的属性和方法</p>
+<p>注解：注解主要用来做一些配置和标记的作用</p>
+<p>泛型：泛型是jdk1.5引入的，Java语法上支持泛型，但是在编译时会进行类型擦除，将&lt;&gt;中的泛型替换成具体的类型，和没有泛型一样。</p>
+<p>Java和C++的区别：</p>
+<ul>
+<li>Java是面向对象的语言，所有类都继承Object类。C++为了兼容c，即是面向对象，也支持面向过程。</li>
+<li>Java程序编译后生成的字节码在JVM虚拟机上运行，因此具有跨平台的性质，而C++不能跨平台</li>
+<li>Java具有垃圾回收机制，可以自动回收不再使用的内存。而C++需要手动释放空间。</li>
+<li>Java不支持多继承，只能采用实现多个接口来实现这个功能，c++支持多继承</li>
+<li>Java中goto是保留字但不能使用，C++可以试用goto</li>
+<li>Java不支持条件编译，C++支持条件编译</li>
+<li>Java不支持操作符的重载，c++可以</li>
+<li>Java 没有指针，它的引用可以理解为安全指针，而 C++ 具有和 C 一样的指针。</li>
+</ul>
 
                 
             </div>
@@ -1207,13 +1234,13 @@ c <span class="token operator">==</span> <span class="token function">d</span> <
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/11/29/mian-shi/mian-shi-zi-liao-zheng-li/">
+                <a href="/2021/11/30/2021-11-30-wu-zhi-shan-xian-xing-tong-yu-fang-cheng-kuo-zhan-gcd/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="五指山(线性同余方程、扩展gcd)">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">五指山(线性同余方程、扩展gcd)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1224,15 +1251,35 @@ c <span class="token operator">==</span> <span class="token function">d</span> <
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-29
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-30
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            葛济维
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%A8%A1%E6%9D%BF%E9%A2%98/">
+                        <span class="chip bg-color">模板题</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BA%BF%E6%80%A7%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/">
+                        <span class="chip bg-color">线性同余方程</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%89%A9%E5%B1%95gcd/">
+                        <span class="chip bg-color">扩展gcd</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1487,7 +1534,7 @@ c <span class="token operator">==</span> <span class="token function">d</span> <
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">26.6k</span>
+                        class="white-color">28.3k</span>
             
             
             

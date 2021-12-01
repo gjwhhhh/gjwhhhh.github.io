@@ -13,10 +13,12 @@
 数据结构
 
 链表与邻接表：树与图的存储栈与队列：单调队列、单调栈kmpTrie并查集堆Hash表
+树状数组
+线段树
 
 搜索与图论 
 
-DFS与BFS树与图的">
+DF">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -41,9 +43,9 @@ DFS与BFS树与图的">
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="葛济维的博客" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="葛济维的博客" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -381,6 +383,10 @@ DFS与BFS树与图的">
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/">
+                                <span class="chip bg-color">算法模板</span>
+                            </a>
+                        
                             <a href="/tags/%E7%AC%94%E8%AE%B0/">
                                 <span class="chip bg-color">笔记</span>
                             </a>
@@ -413,21 +419,21 @@ DFS与BFS树与图的">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-30
+                    2021-12-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    8 分
                 </div>
                 
 
@@ -455,6 +461,8 @@ DFS与BFS树与图的">
 <p>数据结构</p>
 <blockquote>
 <p>链表与邻接表：树与图的存储<br>栈与队列：单调队列、单调栈<br>kmp<br>Trie<br>并查集<br>堆<br>Hash表</p>
+<p>树状数组</p>
+<p>线段树</p>
 </blockquote>
 <p>搜索与图论 </p>
 <blockquote>
@@ -495,6 +503,39 @@ DFS与BFS树与图的">
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
+<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h2 id="树状数组"><a href="#树状数组" class="headerlink" title="树状数组"></a>树状数组</h2><h3 id="树状数组原理"><a href="#树状数组原理" class="headerlink" title="树状数组原理"></a>树状数组原理</h3><p><img src="/../images/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/7416_68861e9035-31e23bc7b41ec145edb45cee8b55855-1636690330918.png" alt="31e23bc7b41ec145edb45cee8b55855.png"></p>
+<p>1、lowbit(x):返回x的最后一位1</p>
+<p>2、add(x,v):在x位置加上v，并将后面相关联的位置也加上v</p>
+<p>3、query(x):询问x的前缀和</p>
+<p>时间复杂度 $O(logn)$</p>
+<h3 id="树状数组模板"><a href="#树状数组模板" class="headerlink" title="树状数组模板"></a>树状数组模板</h3><pre class=" language-c++"><code class="language-c++">const int N = 100005;
+int a[N],tree[N];
+int n,m;
+
+int lowbit(int x)
+{
+    return x & (-x);
+}
+void update(int pos,int v)
+{
+    for(int i=pos; i<N; i+=lowbit(i))
+    {
+        tree[i] += v;
+    }
+}
+int query(int n)
+{
+    int ans = 0;
+    for(int pos=n; pos>0; pos-=lowbit(pos)) ans += tree[pos];
+    return ans;
+}
+int query(int a,int b)
+{
+    return query(b) - query(a-1);
+}
+</code></pre>
+<p>例题：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1266/">1264. 动态求连续区间和</a></p>
+<h2 id="树状数组-1"><a href="#树状数组-1" class="headerlink" title="树状数组"></a>树状数组</h2><p>参见文章：<a href="https://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/">线段树</a> </p>
 <h1 id="数论"><a href="#数论" class="headerlink" title="数论"></a>数论</h1><h2 id="约数"><a href="#约数" class="headerlink" title="约数"></a>约数</h2><h3 id="约数个数定理和约数和定理"><a href="#约数个数定理和约数和定理" class="headerlink" title="约数个数定理和约数和定理"></a>约数个数定理和约数和定理</h3><p>约数个数定理可以计算出一个数约数的个数，在小学奥数与中学竞赛中大有用处。<br><strong>定理</strong></p>
 <p>对于一个大于1正整数n可以分解质因数<br><img src="https://bkimg.cdn.bcebos.com/formula/afef3bf76b93359a0067ea80e57bca0e.svg"><br>则n的正约数的个数就是<br><img src="https://bkimg.cdn.bcebos.com/formula/21c38a03ef417a187c0a202b37ce59c4.svg"><br>n的(a₁+1)(a₂+1)(a₃+1)…(ak+1)个==正约数的和==为<br>$f(n)=(p_1^0+p_1^1+p_1^2+…p_1^{a_1})(p_2^0+p_2^1+p_2^2+…p_2^{a_2})…(p_k^0+p_k^1+p_k^2+…p_k^{a_k}）$<br>其中a1、a2、a3…ak是p1、p2、p3，…pk的指数。</p>
 <p>例题：<br><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/872/">https://www.acwing.com/problem/content/872/</a><br><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/873/">https://www.acwing.com/problem/content/873/</a></p>
@@ -554,11 +595,33 @@ DFS与BFS树与图的">
 <h2 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h2><h5 id="乘法逆元的定义"><a href="#乘法逆元的定义" class="headerlink" title="乘法逆元的定义"></a>乘法逆元的定义</h5><blockquote>
 <p>若整数 b，m 互质，并且对于任意的整数 a，如果满足 b|a，则存在一个整数 x，使得 $a/b≡a×x(mod\ m)$，则称 x 为 b 的模 m 乘法逆元，记为$b^{−1}(mod\ m)$。<br>b 存在乘法逆元的充要条件是 b 与模数 m 互质。当模数 m 为质数时，$b^{m−2}$ 即为 b 的乘法逆元</p>
 </blockquote>
-<h2 id="扩展欧几里得算法"><a href="#扩展欧几里得算法" class="headerlink" title="扩展欧几里得算法"></a>扩展欧几里得算法</h2><p>前置知识：</p>
-<blockquote>
+<h2 id="扩展欧几里得算法"><a href="#扩展欧几里得算法" class="headerlink" title="扩展欧几里得算法"></a>扩展欧几里得算法</h2><h4 id="裴蜀定理"><a href="#裴蜀定理" class="headerlink" title="裴蜀定理"></a>裴蜀定理</h4><blockquote>
 <p>裴蜀定理：若a,b是整数,且gcd(a,b)=d，那么对于任意的整数x、y，ax+by都一定是d的倍数，特别地，一定存在整数x,y，使ax+by=d成立。</p>
 </blockquote>
-<p><strong>拓展欧几里得算法</strong>：它可以在辗转相除途中求出不定方程 <img src="https://www.zhihu.com/equation?tex=ax+by=c" alt="[公式]"> 的一组解。</p>
+<p>或者这样解释：</p>
+<blockquote>
+<p> 裴蜀定理：对任何整数a、b和它们的最大公约数d，关于未知数x和y的线性丢番图方程（称为裴蜀等式）：ax + by = m，有解当且仅当m是d的倍数。</p>
+</blockquote>
+<p>并且ax+by=m的通解：</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cbegin%7Bcases%7Dx_k+=+x+k%5Ccdot%5Cdisplaystyle%5Cfrac%7Bb%7D%7B%5Cgcd(a,b)%7D%5C%5Cy_k=y-k%5Ccdot%5Cdisplaystyle%5Cfrac%7Ba%7D%7B%5Cgcd(a,b)%7D%5Cend%7Bcases%7D(k%5Cin+%5Cmathbb%7BZ%7D)" alt="[公式]"></p>
+<h4 id="裴蜀定理及其证明"><a href="#裴蜀定理及其证明" class="headerlink" title="裴蜀定理及其证明"></a>裴蜀定理及其证明</h4><p>转载于 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/100567253">https://zhuanlan.zhihu.com/p/100567253</a> Pecco</p>
+<p><strong>下面hexo不支持图片内联，排版太乱，可直接跳过证明</strong> </p>
+<blockquote>
+<p>（裴蜀定理）：设 <img src="https://www.zhihu.com/equation?tex=a,+b" alt="[公式]"> 为正整数，则关于 <img src="https://www.zhihu.com/equation?tex=x,y" alt="[公式]"> 的方程 <img src="https://www.zhihu.com/equation?tex=ax+by=c" alt="[公式]"> 有整数解当且仅当 c 是 <img src="https://www.zhihu.com/equation?tex=%5Cgcd(a,b)" alt="[公式]"> 的倍数。</p>
+<p>我们通过拓展欧几里得算法可以求得 ax+by=c 的一组解</p>
+</blockquote>
+<p>并且ax+by=c的通解：</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cbegin%7Bcases%7Dx_k+=+x+k%5Ccdot%5Cdisplaystyle%5Cfrac%7Bb%7D%7B%5Cgcd(a,b)%7D%5C%5Cy_k=y-k%5Ccdot%5Cdisplaystyle%5Cfrac%7Ba%7D%7B%5Cgcd(a,b)%7D%5Cend%7Bcases%7D(k%5Cin+%5Cmathbb%7BZ%7D)" alt="[公式]"></p>
+<p>证明：</p>
+<blockquote>
+<p>我们求得了 <img src="https://www.zhihu.com/equation?tex=ax%2Bby%3D%5Cgcd%28a%2Cb%29"> 的<strong>一组特解</strong>，那么<strong>通解</strong>是什么呢？</p>
+<p>设除了已经求出的 <img src="https://www.zhihu.com/equation?tex=x,y" alt="[公式]"> 之外还有一组解 <img src="https://www.zhihu.com/equation?tex=x_1=x+%5Cdelta" alt="[公式]"> 和 <img src="https://www.zhihu.com/equation?tex=y_1" alt="[公式]"> ，那么由 <img src="https://www.zhihu.com/equation?tex=ax_1-a%5Cdelta+by=%5Cgcd(a,b)" alt="[公式]"> ，得 <img src="https://www.zhihu.com/equation?tex=ax_1+b(y-%5Cdisplaystyle%5Cfrac%7Ba%5Cdelta%7D%7Bb%7D)=%5Cgcd(a,b)" alt="[公式]"> ，得 <img src="https://www.zhihu.com/equation?tex=y_1=y-%5Cdisplaystyle%5Cfrac%7Ba%5Cdelta%7D%7Bb%7D" alt="[公式]"> 。</p>
+<p>但是，我们必须要保证 <img src="https://www.zhihu.com/equation?tex=%5Cdelta" alt="[公式]"> 和 <img src="https://www.zhihu.com/equation?tex=%5Cdisplaystyle%5Cfrac%7Ba%5Cdelta%7D%7Bb%7D" alt="[公式]"> 都是整数，后者等于 <img src="https://www.zhihu.com/equation?tex=%5Cdisplaystyle%5Cfrac%7Ba%27%7D%7Bb%27%7D%5Cdelta" alt="[公式]"> ，其中 <img src="https://www.zhihu.com/equation?tex=a%27=%5Cdisplaystyle%5Cfrac%7Ba%7D%7B%5Cgcd(a,b)%7D" alt="[公式]"> ， <img src="https://www.zhihu.com/equation?tex=b%27=%5Cdisplaystyle%5Cfrac%7Bb%7D%7B%5Cgcd(a,b)%7D" alt="[公式]"> 。由于 <img src="https://www.zhihu.com/equation?tex=a%27" alt="[公式]"> 与 <img src="https://www.zhihu.com/equation?tex=b%27" alt="[公式]"> 互质， <img src="https://www.zhihu.com/equation?tex=%5Cdelta" alt="[公式]"> 应当等于 <img src="https://www.zhihu.com/equation?tex=kb%27" alt="[公式]"> （ <img src="https://www.zhihu.com/equation?tex=k" alt="[公式]"> 是整数），即：</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cbegin%7Bcases%7Dx_k+=+x+k%5Ccdot%5Cdisplaystyle%5Cfrac%7Bb%7D%7B%5Cgcd(a,b)%7D%5C%5Cy_k=y-k%5Ccdot%5Cdisplaystyle%5Cfrac%7Ba%7D%7B%5Cgcd(a,b)%7D%5Cend%7Bcases%7D(k%5Cin+%5Cmathbb%7BZ%7D)" alt="[公式]"></p>
+<p>这便是该不定方程的通解</p>
+<p>转载于 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/100567253">https://zhuanlan.zhihu.com/p/100567253</a> Pecco</p>
+</blockquote>
+<h4 id="拓展欧几里得算法"><a href="#拓展欧几里得算法" class="headerlink" title="拓展欧几里得算法"></a>拓展欧几里得算法</h4><p><strong>拓展欧几里得算法</strong>：它可以在辗转相除途中求出不定方程 <img src="https://www.zhihu.com/equation?tex=ax+by=c" alt="[公式]"> 的一组解。</p>
 <p>公式推导如下：</p>
 <p><img src="/../images/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/image-20211130105444207.png" alt="image-20211130105444207"></p>
 <p>代码模板：</p>
@@ -638,6 +701,10 @@ DFS与BFS树与图的">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
+                            
+                                <a href="/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/">
+                                    <span class="chip bg-color">算法模板</span>
+                                </a>
                             
                                 <a href="/tags/%E7%AC%94%E8%AE%B0/">
                                     <span class="chip bg-color">笔记</span>
@@ -1389,7 +1456,7 @@ DFS与BFS树与图的">
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">26.6k</span>
+                        class="white-color">28.3k</span>
             
             
             

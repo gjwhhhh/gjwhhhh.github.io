@@ -6,7 +6,7 @@
   <link href="http://gjwhhhh.github.io/atom.xml" rel="self"/>
   
   <link href="http://gjwhhhh.github.io/"/>
-  <updated>2021-11-30T13:09:24.917Z</updated>
+  <updated>2021-12-01T14:21:11.643Z</updated>
   <id>http://gjwhhhh.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://gjwhhhh.github.io/2021/11/29/mian-shi/mian-shi-zi-liao-zheng-li/"/>
-    <id>http://gjwhhhh.github.io/2021/11/29/mian-shi/mian-shi-zi-liao-zheng-li/</id>
-    <published>2021-11-29T12:28:57.801Z</published>
-    <updated>2021-11-30T13:09:24.917Z</updated>
+    <title>面试资料整理</title>
+    <link href="http://gjwhhhh.github.io/2021/12/01/mian-shi/mian-shi-zi-liao-zheng-li/"/>
+    <id>http://gjwhhhh.github.io/2021/12/01/mian-shi/mian-shi-zi-liao-zheng-li/</id>
+    <published>2021-12-01T14:21:04.000Z</published>
+    <updated>2021-12-01T14:21:11.643Z</updated>
     
     
       
@@ -34,6 +34,42 @@
     
     
     
+    <category term="笔记" scheme="http://gjwhhhh.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Java" scheme="http://gjwhhhh.github.io/tags/Java/"/>
+    
+    <category term="面试" scheme="http://gjwhhhh.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>五指山(线性同余方程、扩展gcd)</title>
+    <link href="http://gjwhhhh.github.io/2021/11/30/2021-11-30-wu-zhi-shan-xian-xing-tong-yu-fang-cheng-kuo-zhan-gcd/"/>
+    <id>http://gjwhhhh.github.io/2021/11/30/2021-11-30-wu-zhi-shan-xian-xing-tong-yu-fang-cheng-kuo-zhan-gcd/</id>
+    <published>2021-11-30T13:29:34.000Z</published>
+    <updated>2021-12-01T14:52:51.244Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;前置知识：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="模板题" scheme="http://gjwhhhh.github.io/tags/%E6%A8%A1%E6%9D%BF%E9%A2%98/"/>
+    
+    <category term="线性同余方程" scheme="http://gjwhhhh.github.io/tags/%E7%BA%BF%E6%80%A7%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B/"/>
+    
+    <category term="扩展gcd" scheme="http://gjwhhhh.github.io/tags/%E6%89%A9%E5%B1%95gcd/"/>
     
   </entry>
   
@@ -42,7 +78,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/29/mian-shi/java-quan-zhan-zhi-shi-ti-xi/"/>
     <id>http://gjwhhhh.github.io/2021/11/29/mian-shi/java-quan-zhan-zhi-shi-ti-xi/</id>
     <published>2021-11-29T05:03:00.000Z</published>
-    <updated>2021-11-30T12:27:41.479Z</updated>
+    <updated>2021-12-01T07:37:24.161Z</updated>
     
     
       
@@ -96,7 +132,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/26/suan-fa-bi-ji/"/>
     <id>http://gjwhhhh.github.io/2021/11/26/suan-fa-bi-ji/</id>
     <published>2021-11-26T13:44:00.000Z</published>
-    <updated>2021-11-30T02:56:30.322Z</updated>
+    <updated>2021-12-01T14:46:13.037Z</updated>
     
     
       
@@ -112,6 +148,8 @@
     
     <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
+    
+    <category term="算法模板" scheme="http://gjwhhhh.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
     
     <category term="笔记" scheme="http://gjwhhhh.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
@@ -273,7 +311,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/17/2021-11-17-san-ti-gong-ji-3-wei-qian-zhui-he/"/>
     <id>http://gjwhhhh.github.io/2021/11/17/2021-11-17-san-ti-gong-ji-3-wei-qian-zhui-he/</id>
     <published>2021-11-17T15:01:00.000Z</published>
-    <updated>2021-11-26T03:44:00.815Z</updated>
+    <updated>2021-11-30T14:35:40.939Z</updated>
     
     
       
@@ -291,7 +329,41 @@
     <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
+    <category term="模板题" scheme="http://gjwhhhh.github.io/tags/%E6%A8%A1%E6%9D%BF%E9%A2%98/"/>
+    
     <category term="前缀和" scheme="http://gjwhhhh.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性同余方程(扩展欧几里得算法)</title>
+    <link href="http://gjwhhhh.github.io/2021/11/17/2021-11-17-xian-xing-tong-yu-fang-cheng-kuo-zhan-ou-ji-li-de-suan-fa/"/>
+    <id>http://gjwhhhh.github.io/2021/11/17/2021-11-17-xian-xing-tong-yu-fang-cheng-kuo-zhan-ou-ji-li-de-suan-fa/</id>
+    <published>2021-11-17T15:01:00.000Z</published>
+    <updated>2021-11-30T14:37:07.419Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.acwing.com/problem/content/880/&quot;&gt;线性同余方程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;给定 n 组数据 ai,bi,mi，对于每组数求出一个 xi，使其满足 $a_i * x_i≡ b_i (mod\</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="模板题" scheme="http://gjwhhhh.github.io/tags/%E6%A8%A1%E6%9D%BF%E9%A2%98/"/>
+    
+    <category term="数学知识" scheme="http://gjwhhhh.github.io/tags/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="同余" scheme="http://gjwhhhh.github.io/tags/%E5%90%8C%E4%BD%99/"/>
+    
+    <category term="扩展欧几里得算法" scheme="http://gjwhhhh.github.io/tags/%E6%89%A9%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -300,7 +372,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/17/2021-11-17-1-wei-2-wei-3-wei-qian-zhui-he/"/>
     <id>http://gjwhhhh.github.io/2021/11/17/2021-11-17-1-wei-2-wei-3-wei-qian-zhui-he/</id>
     <published>2021-11-17T13:17:00.000Z</published>
-    <updated>2021-11-18T15:30:48.930Z</updated>
+    <updated>2021-11-30T14:32:56.376Z</updated>
     
     
       
@@ -315,6 +387,8 @@
     
     <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
+    
+    <category term="算法模板" scheme="http://gjwhhhh.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
     
     <category term="前缀和" scheme="http://gjwhhhh.github.io/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
     
@@ -377,7 +451,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/14/2021-11-14-tie-lu-yu-gong-lu-floyd/"/>
     <id>http://gjwhhhh.github.io/2021/11/14/2021-11-14-tie-lu-yu-gong-lu-floyd/</id>
     <published>2021-11-14T14:15:00.000Z</published>
-    <updated>2021-11-14T14:15:10.000Z</updated>
+    <updated>2021-11-30T14:35:08.448Z</updated>
     
     
       
@@ -394,11 +468,11 @@
     <category term="算法" scheme="http://gjwhhhh.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
+    <category term="模板题" scheme="http://gjwhhhh.github.io/tags/%E6%A8%A1%E6%9D%BF%E9%A2%98/"/>
+    
     <category term="Floyd" scheme="http://gjwhhhh.github.io/tags/Floyd/"/>
     
     <category term="单源最短路" scheme="http://gjwhhhh.github.io/tags/%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-    
-    <category term="模板题" scheme="http://gjwhhhh.github.io/tags/%E6%A8%A1%E6%9D%BF%E9%A2%98/"/>
     
   </entry>
   
@@ -407,7 +481,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/14/2021-11-14-xiao-peng-you-pai-dui/"/>
     <id>http://gjwhhhh.github.io/2021/11/14/2021-11-14-xiao-peng-you-pai-dui/</id>
     <published>2021-11-14T13:51:00.000Z</published>
-    <updated>2021-11-14T13:54:52.791Z</updated>
+    <updated>2021-11-30T14:35:34.705Z</updated>
     
     
       
@@ -428,6 +502,8 @@
     
     <category term="逆序对" scheme="http://gjwhhhh.github.io/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/"/>
     
+    <category term="模板题" scheme="http://gjwhhhh.github.io/tags/%E6%A8%A1%E6%9D%BF%E9%A2%98/"/>
+    
   </entry>
   
   <entry>
@@ -435,7 +511,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/</id>
     <published>2021-11-12T12:39:00.000Z</published>
-    <updated>2021-11-15T07:11:51.050Z</updated>
+    <updated>2021-11-30T14:34:50.719Z</updated>
     
     
       
@@ -453,7 +529,7 @@
     
     <category term="线段树" scheme="http://gjwhhhh.github.io/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
-    <category term="模板" scheme="http://gjwhhhh.github.io/tags/%E6%A8%A1%E6%9D%BF/"/>
+    <category term="算法模板" scheme="http://gjwhhhh.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
     
   </entry>
   
@@ -487,7 +563,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/12/shu-zhuang-shu-zu-mo-ban/"/>
     <id>http://gjwhhhh.github.io/2021/11/12/shu-zhuang-shu-zu-mo-ban/</id>
     <published>2021-11-12T04:09:00.000Z</published>
-    <updated>2021-11-12T14:30:51.329Z</updated>
+    <updated>2021-11-30T14:32:30.683Z</updated>
     
     
       
@@ -505,55 +581,7 @@
     
     <category term="树状数组" scheme="http://gjwhhhh.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
-  </entry>
-  
-  <entry>
-    <title>博客搭建及美化</title>
-    <link href="http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian-ji-mei-hua/"/>
-    <id>http://gjwhhhh.github.io/2021/11/12/2021-11-12-bo-ke-da-jian-ji-mei-hua/</id>
-    <published>2021-11-12T03:34:00.000Z</published>
-    <updated>2021-11-12T15:13:53.311Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;搭建框架&quot;&gt;&lt;a href=&quot;#搭建框架&quot; class=&quot;headerlink&quot; title=&quot;搭建框架&quot;&gt;&lt;/a&gt;搭建框架&lt;/h2&gt;&lt;p&gt;博客主要采用github + hexo +</summary>
-        
-      
-    
-    
-    
-    <category term="博客搭建" scheme="http://gjwhhhh.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-    <category term="笔记" scheme="http://gjwhhhh.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://gjwhhhh.github.io/2021/11/10/hellohexo/"/>
-    <id>http://gjwhhhh.github.io/2021/11/10/hellohexo/</id>
-    <published>2021-11-10T12:28:00.000Z</published>
-    <updated>2021-11-12T14:03:21.907Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="博客搭建" scheme="http://gjwhhhh.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-    <category term="笔记" scheme="http://gjwhhhh.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="算法模板" scheme="http://gjwhhhh.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
     
   </entry>
   
