@@ -419,14 +419,14 @@ DF">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-01
+                    2021-12-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    2.1k
                 </div>
                 
 
@@ -535,7 +535,16 @@ int query(int a,int b)
 }
 </code></pre>
 <p>例题：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1266/">1264. 动态求连续区间和</a></p>
-<h2 id="树状数组-1"><a href="#树状数组-1" class="headerlink" title="树状数组"></a>树状数组</h2><p>参见文章：<a href="https://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/">线段树</a> </p>
+<h2 id="线段树"><a href="#线段树" class="headerlink" title="线段树"></a>线段树</h2><p>参见文章：<a href="https://gjwhhhh.github.io/2021/11/12/2021-11-12-xian-duan-shu/">线段树</a> </p>
+<h2 id="树和图的存储"><a href="#树和图的存储" class="headerlink" title="树和图的存储"></a>树和图的存储</h2><p>（数组建立邻接表）</p>
+<h3 id="邻接表"><a href="#邻接表" class="headerlink" title="邻接表"></a>邻接表</h3><pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> h<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> e<span class="token punctuation">[</span>N <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> ne<span class="token punctuation">[</span>N <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> idx<span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> b<span class="token punctuation">,</span> ne<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> h<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">,</span> h<span class="token punctuation">[</span>a<span class="token punctuation">]</span> <span class="token operator">=</span> idx<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//初始化</span>
+<span class="token function">memset</span><span class="token punctuation">(</span>h<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <h1 id="数论"><a href="#数论" class="headerlink" title="数论"></a>数论</h1><h2 id="约数"><a href="#约数" class="headerlink" title="约数"></a>约数</h2><h3 id="约数个数定理和约数和定理"><a href="#约数个数定理和约数和定理" class="headerlink" title="约数个数定理和约数和定理"></a>约数个数定理和约数和定理</h3><p>约数个数定理可以计算出一个数约数的个数，在小学奥数与中学竞赛中大有用处。<br><strong>定理</strong></p>
 <p>对于一个大于1正整数n可以分解质因数<br><img src="https://bkimg.cdn.bcebos.com/formula/afef3bf76b93359a0067ea80e57bca0e.svg"><br>则n的正约数的个数就是<br><img src="https://bkimg.cdn.bcebos.com/formula/21c38a03ef417a187c0a202b37ce59c4.svg"><br>n的(a₁+1)(a₂+1)(a₃+1)…(ak+1)个==正约数的和==为<br>$f(n)=(p_1^0+p_1^1+p_1^2+…p_1^{a_1})(p_2^0+p_2^1+p_2^2+…p_2^{a_2})…(p_k^0+p_k^1+p_k^2+…p_k^{a_k}）$<br>其中a1、a2、a3…ak是p1、p2、p3，…pk的指数。</p>
 <p>例题：<br><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/872/">https://www.acwing.com/problem/content/872/</a><br><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/873/">https://www.acwing.com/problem/content/873/</a></p>
@@ -614,7 +623,7 @@ int query(int a,int b)
 <p><img src="https://www.zhihu.com/equation?tex=%5Cbegin%7Bcases%7Dx_k+=+x+k%5Ccdot%5Cdisplaystyle%5Cfrac%7Bb%7D%7B%5Cgcd(a,b)%7D%5C%5Cy_k=y-k%5Ccdot%5Cdisplaystyle%5Cfrac%7Ba%7D%7B%5Cgcd(a,b)%7D%5Cend%7Bcases%7D(k%5Cin+%5Cmathbb%7BZ%7D)" alt="[公式]"></p>
 <p>证明：</p>
 <blockquote>
-<p>我们求得了 <img src="https://www.zhihu.com/equation?tex=ax%2Bby%3D%5Cgcd%28a%2Cb%29"> 的<strong>一组特解</strong>，那么<strong>通解</strong>是什么呢？</p>
+<p>我们求得了 <img src="https://ftp.bmp.ovh/imgs/2021/12/61d0a788cc17638b.png"> 的<strong>一组特解</strong>，那么<strong>通解</strong>是什么呢？</p>
 <p>设除了已经求出的 <img src="https://www.zhihu.com/equation?tex=x,y" alt="[公式]"> 之外还有一组解 <img src="https://www.zhihu.com/equation?tex=x_1=x+%5Cdelta" alt="[公式]"> 和 <img src="https://www.zhihu.com/equation?tex=y_1" alt="[公式]"> ，那么由 <img src="https://www.zhihu.com/equation?tex=ax_1-a%5Cdelta+by=%5Cgcd(a,b)" alt="[公式]"> ，得 <img src="https://www.zhihu.com/equation?tex=ax_1+b(y-%5Cdisplaystyle%5Cfrac%7Ba%5Cdelta%7D%7Bb%7D)=%5Cgcd(a,b)" alt="[公式]"> ，得 <img src="https://www.zhihu.com/equation?tex=y_1=y-%5Cdisplaystyle%5Cfrac%7Ba%5Cdelta%7D%7Bb%7D" alt="[公式]"> 。</p>
 <p>但是，我们必须要保证 <img src="https://www.zhihu.com/equation?tex=%5Cdelta" alt="[公式]"> 和 <img src="https://www.zhihu.com/equation?tex=%5Cdisplaystyle%5Cfrac%7Ba%5Cdelta%7D%7Bb%7D" alt="[公式]"> 都是整数，后者等于 <img src="https://www.zhihu.com/equation?tex=%5Cdisplaystyle%5Cfrac%7Ba%27%7D%7Bb%27%7D%5Cdelta" alt="[公式]"> ，其中 <img src="https://www.zhihu.com/equation?tex=a%27=%5Cdisplaystyle%5Cfrac%7Ba%7D%7B%5Cgcd(a,b)%7D" alt="[公式]"> ， <img src="https://www.zhihu.com/equation?tex=b%27=%5Cdisplaystyle%5Cfrac%7Bb%7D%7B%5Cgcd(a,b)%7D" alt="[公式]"> 。由于 <img src="https://www.zhihu.com/equation?tex=a%27" alt="[公式]"> 与 <img src="https://www.zhihu.com/equation?tex=b%27" alt="[公式]"> 互质， <img src="https://www.zhihu.com/equation?tex=%5Cdelta" alt="[公式]"> 应当等于 <img src="https://www.zhihu.com/equation?tex=kb%27" alt="[公式]"> （ <img src="https://www.zhihu.com/equation?tex=k" alt="[公式]"> 是整数），即：</p>
 <p><img src="https://www.zhihu.com/equation?tex=%5Cbegin%7Bcases%7Dx_k+=+x+k%5Ccdot%5Cdisplaystyle%5Cfrac%7Bb%7D%7B%5Cgcd(a,b)%7D%5C%5Cy_k=y-k%5Ccdot%5Cdisplaystyle%5Cfrac%7Ba%7D%7B%5Cgcd(a,b)%7D%5Cend%7Bcases%7D(k%5Cin+%5Cmathbb%7BZ%7D)" alt="[公式]"></p>
@@ -625,16 +634,26 @@ int query(int a,int b)
 <p>公式推导如下：</p>
 <p><img src="/../images/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/image-20211130105444207.png" alt="image-20211130105444207"></p>
 <p>代码模板：</p>
-<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">exgcd</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&amp;</span>x<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&amp;</span>y<span class="token punctuation">)</span>
+<pre class=" language-cpp"><code class="language-cpp"><span class="token comment" spellcheck="true">/*
+ax+by=d
+bx+(a%b)y=d
+bx+(a-a/b*b)y=d
+ay+b(x-a/b*y)=d
+{
+    x=y
+    y=x-a/b*y
+}
+*/</span>
+<span class="token keyword">int</span> <span class="token function">exgcd</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">,</span><span class="token keyword">int</span> <span class="token operator">&amp;</span>x<span class="token punctuation">,</span><span class="token keyword">int</span> <span class="token operator">&amp;</span>y<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>b <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>b<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span>y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> a<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-    <span class="token keyword">int</span> d <span class="token operator">=</span> <span class="token function">exgcd</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> a <span class="token operator">%</span> b<span class="token punctuation">,</span> y<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//这里交换了x和y</span>
-    y <span class="token operator">-</span><span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">/</span> b<span class="token punctuation">)</span> <span class="token operator">*</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> d <span class="token operator">=</span> <span class="token function">exgcd</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span>a<span class="token operator">%</span>b<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> x0 <span class="token operator">=</span> x<span class="token punctuation">,</span>y0 <span class="token operator">=</span> y<span class="token punctuation">;</span>
+    x <span class="token operator">=</span> y0<span class="token punctuation">;</span>
+    y <span class="token operator">=</span> x0 <span class="token operator">-</span> a<span class="token operator">/</span>b <span class="token operator">*</span> y0<span class="token punctuation">;</span>
     <span class="token keyword">return</span> d<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
@@ -1456,7 +1475,7 @@ int query(int a,int b)
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">28.3k</span>
+                        class="white-color">29k</span>
             
             
             

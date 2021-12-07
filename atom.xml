@@ -48,15 +48,16 @@
     <link href="http://gjwhhhh.github.io/2021/11/30/2021-11-30-wu-zhi-shan-xian-xing-tong-yu-fang-cheng-kuo-zhan-gcd/"/>
     <id>http://gjwhhhh.github.io/2021/11/30/2021-11-30-wu-zhi-shan-xian-xing-tong-yu-fang-cheng-kuo-zhan-gcd/</id>
     <published>2021-11-30T13:29:34.000Z</published>
-    <updated>2021-12-01T14:52:51.244Z</updated>
+    <updated>2021-12-03T03:40:23.490Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;题解&quot;&gt;&lt;a href=&quot;#题解&quot; class=&quot;headerlink&quot; title=&quot;题解&quot;&gt;&lt;/a&gt;题解&lt;/h1&gt;&lt;p&gt;前置知识：&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;p&gt;大圣在佛祖的手掌中。&lt;/p&gt;
+&lt;p&gt;我们假设佛祖的手掌是一个圆圈，圆圈的长为 n，逆时针记为：0,1,2,…,n−1，而大圣每次飞的距离为 d。&lt;/p&gt;
+&lt;p&gt;现在大圣所在的位置记为 x，而大圣想去的地方在</summary>
         
       
     
@@ -78,7 +79,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/29/mian-shi/java-quan-zhan-zhi-shi-ti-xi/"/>
     <id>http://gjwhhhh.github.io/2021/11/29/mian-shi/java-quan-zhan-zhi-shi-ti-xi/</id>
     <published>2021-11-29T05:03:00.000Z</published>
-    <updated>2021-12-01T07:37:24.161Z</updated>
+    <updated>2021-12-03T11:38:04.731Z</updated>
     
     
       
@@ -132,7 +133,7 @@
     <link href="http://gjwhhhh.github.io/2021/11/26/suan-fa-bi-ji/"/>
     <id>http://gjwhhhh.github.io/2021/11/26/suan-fa-bi-ji/</id>
     <published>2021-11-26T13:44:00.000Z</published>
-    <updated>2021-12-01T14:46:13.037Z</updated>
+    <updated>2021-12-07T07:38:53.606Z</updated>
     
     
       
