@@ -408,21 +408,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-03
+                    2021-12-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.7k
+                    5.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    16 分
+                    20 分
                 </div>
                 
 
@@ -657,7 +657,76 @@ c <span class="token operator">==</span> <span class="token function">d</span> <
 </ul>
 <h3 id="Java类加载机制"><a href="#Java类加载机制" class="headerlink" title="Java类加载机制"></a>Java类加载机制</h3><p>Java类加载主要有：加载、验证、准备、解析、初始化五个过程，加载、验证、准备、初始化是按顺序开始的，解析则不一定</p>
 <p>类的加载：查找并加载类的二进制数据。</p>
-<h3 id="反射-1"><a href="#反射-1" class="headerlink" title="反射"></a>反射</h3><h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><p>著作权归<a target="_blank" rel="noopener" href="https://pdai.tech所有./">https://pdai.tech所有。</a> 链接：<a target="_blank" rel="noopener" href="https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html">https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html</a></p>
+<h3 id="反射-1"><a href="#反射-1" class="headerlink" title="反射"></a>反射</h3><h2 id="Java集合框架"><a href="#Java集合框架" class="headerlink" title="Java集合框架"></a>Java集合框架</h2><p>Collection容器主要包括Collection和Map两种，Collection存储着对象的集合，而Map存储着键值对。</p>
+<h3 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h3><p>TreeSet、HashSet、LinkedHashSet</p>
+<h3 id="List"><a href="#List" class="headerlink" title="List"></a>List</h3><p>ArrayList、Vector、LinkedList</p>
+<h3 id="Queue"><a href="#Queue" class="headerlink" title="Queue"></a>Queue</h3><p>LinkedList</p>
+<p>PriorityQueue</p>
+<h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><p>TreeMap、HashMap、HashTable、LinkedHashMap</p>
+<h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><ul>
+<li><p>多线程的出现是要解决什么问题的?</p>
+<p>CPU、内存、I/O设备的速度是有极大的差异的，为了合理利用CPU的性能，平衡这三者的速度差异。</p>
+</li>
+<li><p>线程不安全是指什么? 举例说明</p>
+<p>如果多个线程对同一个共享数据进行访问而不采取同步操作的话，那么操作的结果是不一致的。</p>
+</li>
+<li><p>并发出现线程不安全的本质什么? </p>
+<p>可见性，原子性和有序性。</p>
+<p>可见性：CPU缓存引起</p>
+<p>int i = 0; </p>
+<p>i = 10;</p>
+<p>j = i;</p>
+<p>原子性：（分时复用引起）</p>
+<p>一个操作或多个操作，要么不执行，要么全部执行，并且过程中不能被任何因素打断。</p>
+<p>转账问题</p>
+<p>有序性：重排序引起</p>
+<p>即程序执行的顺序按照代码的先后顺序执行。</p>
+</li>
+</ul>
+<ul>
+<li><p>Java是怎么解决并发问题的? 3个关键字，JMM和8个Happens-Before</p>
+<p>三个关键字：volatile、synchronized、final</p>
+<p>Happens-Before规则</p>
+<p>原子性：Java内存模型只保证了基本读取和赋值是原子性操作</p>
+<p>可见性：volatile关键字可以保证可见性，变量被volatile修饰时，有其他线程需要读取时，他会保证修改的值立即被更新到主存，他会去从内存中读取新值。</p>
+<p>而普通的共享变量不能保证可见性，因为普通变量被修改后，什么时候被写入主存是不确定的，当其他线程读取时，很有可能读取到的是旧值。</p>
+<p>synchronized可以保证同一时刻只有一个线程获取锁，然后执行同步代码，并且在释放锁之前会将更新的值写入主存，从而保证其可见性。</p>
+<p>有序性：volatile、synchronize</p>
+</li>
+</ul>
+<p>线程安全是不是非真即假? 不是</p>
+<p>线程安全有哪些实现思路?</p>
+<p>如何理解并发和并行的区别?</p>
+<h3 id="Synchronized"><a href="#Synchronized" class="headerlink" title="Synchronized"></a>Synchronized</h3><ul>
+<li>Synchronized可以作用在哪里? 分别通过对象锁和类锁进行举例。</li>
+</ul>
+<p>方法、对象。</p>
+<p>对象锁：包括方法锁和同步代码块锁。</p>
+<ul>
+<li><p>Synchronized本质上是通过什么保证线程安全的? 分三个方面回答：加锁和释放锁的原理，可重入原理，保证可见性原理。</p>
+</li>
+<li><p>Synchronized由什么样的缺陷?  Java Lock是怎么弥补这些缺陷的。</p>
+</li>
+</ul>
+<p>Synchronized和Lock的对比，和选择?</p>
+<p>Synchronized在使用时有何注意事项?</p>
+<p>Synchronized修饰的方法在抛出异常时,会释放锁吗?</p>
+<p>多个线程等待同一个snchronized锁的时候，JVM如何选择下一个获取锁的线程?</p>
+<p>Synchronized使得同时只有一个线程可以执行，性能比较差，有什么提升的方法?</p>
+<p>我想更加灵活地控制锁的释放和获取(现在释放锁和获取锁的时机都被规定死了)，怎么办?</p>
+<p>什么是锁的升级和降级? 什么是JVM里的偏斜锁、轻量级锁、重量级锁?</p>
+<p>不同的JDK中对Synchronized有何优化?</p>
+<h3 id="Java内存模型"><a href="#Java内存模型" class="headerlink" title="Java内存模型"></a>Java内存模型</h3><p>线程之间的通信机制有两种：共享内存和消息传递。</p>
+<h3 id="线程-1"><a href="#线程-1" class="headerlink" title="线程"></a>线程</h3><ul>
+<li>线程有哪几种状态? 分别说明从一种状态到另一种状态转变有哪些方式?</li>
+</ul>
+<p>初始、就绪、执行、等待、终止</p>
+<p>通常线程有哪几种使用方式?</p>
+<p>基础线程机制有哪些?</p>
+<p>线程的中断方式有哪些?</p>
+<p>线程的互斥同步方式有哪些? 如何比较和选择?</p>
+<p>线程之间有哪些协作方式?</p>
+<h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><p>著作权归<a target="_blank" rel="noopener" href="https://pdai.tech所有./">https://pdai.tech所有。</a> 链接：<a target="_blank" rel="noopener" href="https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html">https://www.pdai.tech/md/java/basic/java-basic-lan-basic.html</a></p>
 <h1 id="复习专栏"><a href="#复习专栏" class="headerlink" title="复习专栏"></a>复习专栏</h1><h3 id="Day2复习-纯手敲"><a href="#Day2复习-纯手敲" class="headerlink" title="Day2复习(纯手敲)"></a>Day2复习(纯手敲)</h3><p><strong>面向对象三大特性：封装、继承、多态</strong></p>
 <p>封装：用抽象的数据类型把数据和操作数据的方法封装在一起，形成一个整体，通过对外的接口与外部联系，这样用户不必知道内部的细节，但可以通过对象对外提供的接口来访问该对象。</p>
 <p>优点：减少耦合，可以独立的开发测试；减轻维护的负担，更容易被程序员理解；</p>
@@ -1527,7 +1596,7 @@ c <span class="token operator">==</span> <span class="token function">d</span> <
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2019-2022</span>
             
             <a href="/about" target="_blank">葛济维</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -1535,7 +1604,7 @@ c <span class="token operator">==</span> <span class="token function">d</span> <
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">29k</span>
+                        class="white-color">24.2k</span>
             
             
             
